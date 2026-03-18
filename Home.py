@@ -186,7 +186,7 @@ libraries = [
     (img_to_html("assets/matplotlib.png"), "Matplotlib", 80),
     (img_to_html("assets/seaborn.png"), "Seaborn", 78),
     ('<img src="https://cdn.simpleicons.org/scikitlearn" width="40" height="40" alt="Scikit-learn"/>', "Scikit-learn", 70),
-    ('<img src="https://img.shields.io/badge/Folium-77B829?style=flat&logoColor=white"/>', "Folium", 75),
+    ("🗺", "Folium", 75),
     (img_to_html("assets/scipy.png"), "Scipy", 80),
 ]
 
