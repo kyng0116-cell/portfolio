@@ -152,6 +152,7 @@ st.markdown(f"""
                 <details style="margin-bottom:0.3rem;">
                     <summary style="cursor:pointer; list-style:none;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)</summary>
                     <div style="margin-top:0.5rem; font-size:0.85rem; opacity:0.85; line-height:1.7;">
+                        <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장
                         <p>• 전기차 보조금 지원신청
                         <p>• 이메일 제목에서 예약번호 추출 자동화
                         <p>• 신청 누락 방지 시스템 설계
