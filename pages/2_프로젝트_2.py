@@ -69,7 +69,7 @@ st.markdown(f"""
     <div style="display:flex; align-items:center; gap:1rem;">
         {logo_html}
         <div>
-            <h1>초저가에서 초신뢰로</h1>
+            <h1>초저가를 넘어 초신뢰로</h1>
             <p>프로젝트 1 한 줄 설명을 입력하세요.</p>
         </div>
     </div>
