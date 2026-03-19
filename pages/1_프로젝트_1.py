@@ -91,7 +91,7 @@ if tab == "💡 인사이트":
             file_name="스타벅스.pdf",
             mime="application/pdf"
         )
-    st.markdown("""<div class="section-box"><h3>분석 배경 및 목적</h3><p><strong>해결하려는 문제:</strong> 기존의 인구통계학(Who) 중심의 단순 성과 지표로는 
+    st.markdown("""<div class="section-box"><h3>분석 배경 및 목적</h3><br/><p><strong>해결하려는 문제:</strong> 기존의 인구통계학(Who) 중심의 단순 성과 지표로는 
                 "왜 특정 프로모션이 성공 또는 실패했는지"에 대한 근본적인 원인을 파악하고 다음 마케팅 액션에 적용하기 어려웠습니다.<br/><br/>
                 <strong>분석 목적:</strong> 고객의 프로모션 수신부터 확인, 완료에 이르는 '행동 여정(Customer Journey)'에 집중하여, 
                 어떤 조건(난이도/혜택)과 접점(채널)이 실제 행동 전환을 유발하는지 행동경제학 관점에서 분석하고 객관적인 프로모션 설계 기준을 도출하고자 했습니다.</p></div>""", unsafe_allow_html=True)
