@@ -119,22 +119,22 @@ st.markdown(f"""
             <div class="profile-col">
                 <h4>자격증</h4>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">📜 사회조사분석사 2급<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>
+                    <summary style="cursor:pointer; list-style:none;">📜 사회조사분석사 2급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>
                     <img src="data:image/png;base64,{cert1_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">📜 직업상담사 2급<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>                    
+                    <summary style="cursor:pointer; list-style:none;">📜 직업상담사 2급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>                    
                     <img src="data:image/png;base64,{cert2_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">📜 청소년상담사 3급<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>                    
+                    <summary style="cursor:pointer; list-style:none;">📜 청소년상담사 3급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>                    
                     <img src="data:image/png;base64,{cert3_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
     </details>
 </div>
             <div class="profile-col">
                 <h4>경력</h4>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>                    
+                    <summary style="cursor:pointer; list-style:none;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>                    
                     <div style="margin-top:0.5rem; font-size:0.85rem; opacity:0.85; line-height:1.7;">
                         <p>• 전기차 보조금 지원 신청
                         <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달
@@ -142,7 +142,7 @@ st.markdown(f"""
                     </div>
                 </details>    
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>                    
+                    <summary style="cursor:pointer; list-style:none;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>                    
                     <div style="margin-top:0.5rem; font-size:0.85rem; opacity:0.85; line-height:1.7;">
                         <p>• SQL, 파이썬, 데이터 분석 관련 하드스킬 학습
                         <p>• 프로젝트 진행
@@ -150,7 +150,7 @@ st.markdown(f"""
                     </div>
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.75rem; opacity:0.5;">  ▶ 클릭</span></summary>                    
+                    <summary style="cursor:pointer; list-style:none;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp;  ▶ 클릭</span></summary>                    
                     <div style="margin-top:0.5rem; font-size:0.85rem; opacity:0.85; line-height:1.7;">
                         <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장
                         <p>• 전기차 보조금 지원신청
