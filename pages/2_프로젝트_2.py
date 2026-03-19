@@ -1,7 +1,10 @@
 import streamlit as st
 
 import base64
-
+def img_to_base64(img_path):
+    with open(img_path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+    
 def img_to_html(img_path, width=40):
     with open(img_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
@@ -114,8 +117,9 @@ if tab == "💡 인사이트":
                 직관적인 1+1 혜택(BOGO)의 경우, 유효기간이 7일일 때보다 5일로 짧을 때 성과가 약 10%p 더 높게 나타났습니다. 이는 마찰 비용을 낮추고 보상을 미루지 않게 만드는 '현재 편향'을 자극한 결과입니다</p></div>""", unsafe_allow_html=True)
 
 elif tab == "📋 대시보드 설명":
-    st.markdown('<h4 style="margin-bottom:0;">첫 번째 대시보드</h4>', unsafe_allow_html=True)
-    st.markdown(img_to_html("assets/스타벅스_대시보드1.png", width=900), unsafe_allow_html=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">첫 번째 대시보드</h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드1.png")}" style="width:900px;">''', unsafe_allow_html=True)
     # 👉 실제 사용: st.image("images/proj1_dash1_desc.png", use_container_width=True)
     st.divider()
     st.markdown("#### 두 번째 대시보드")
