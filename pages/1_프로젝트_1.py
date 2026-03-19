@@ -46,7 +46,7 @@ with st.sidebar:
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
-html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
+html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }.section-box p { word-break: keep-all; }
 .page-header {
     background: linear-gradient(135deg, #1a1a2e, #0f3460);
     color: white; padding: 1.8rem 2rem;
