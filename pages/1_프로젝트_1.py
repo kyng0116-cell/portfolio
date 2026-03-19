@@ -2,6 +2,9 @@ import streamlit as st
 
 
 import base64
+def img_to_base64(img_path):
+    with open(img_path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
 
 def img_to_html(img_path, width=40):
     with open(img_path, "rb") as f:
@@ -133,24 +136,26 @@ if tab == "💡 인사이트":
                 스킨케어 재고 심도를 일반 매장 대비 대폭 강화하는 물류 최적화가 필요합니다.</p></div>""", unsafe_allow_html=True)
 
 elif tab == "📋 대시보드 설명":
-    st.markdown("#### 대시보드 홈 화면")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+1+Description", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">표지</h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/다이소_표지.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
-    st.markdown("#### 첫 번째 대시보드")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+1+Description", use_container_width=True)
-    # 👉 실제 사용: st.image("images/proj2_dash1_desc.png", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">첫 번째 대시보드 </h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드1.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
-    st.markdown("#### 두 번째 대시보드")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+2+Description", use_container_width=True)
-    # 👉 실제 사용: st.image("images/proj2_dash2_desc.png", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">두 번째 대시보드 </h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드2.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
-    st.markdown("#### 세 번째 대시보드")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+3+Description", use_container_width=True)
-    # 👉 실제 사용: st.image("images/proj2_dash3_desc.png", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">세 번째 대시보드 </h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드3.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
-    st.markdown("#### 네 번째 대시보드")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+4+Description", use_container_width=True)
-    # 👉 실제 사용: st.image("images/proj2_dash4_desc.png", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">네 번째 대시보드 </h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드4.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
+    st.divider()
 
 elif tab == "📊 대시보드":
     with st.expander("대시보드", expanded=True):
