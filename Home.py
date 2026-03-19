@@ -65,8 +65,8 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     border: 3px solid rgba(255,255,255,0.2);
 }
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; }
-.profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
-.profile-col { min-width: 150px; flex: 1; }
+.profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: nowrap; }
+.profile-col { min-width: 180px; flex: 1; }
 .profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin: 0 0 0.4rem 0; }
 .profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; opacity: 0.9; }
 .section-title {
