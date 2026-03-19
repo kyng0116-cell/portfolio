@@ -1,11 +1,18 @@
 import streamlit as st
-
 import base64
 
 def img_to_base64(path):
     try:
         with open(path, "rb") as f:
             return base64.b64encode(f.read()).decode()
+    except:
+        return ""
+
+def img_to_html(img_path, width=40):
+    try:
+        with open(img_path, "rb") as f:
+            data = base64.b64encode(f.read()).decode()
+        return f'<img src="data:image/png;base64,{data}" width="{width}" height="{width}"/>'
     except:
         return ""
 
@@ -31,20 +38,18 @@ with st.sidebar:
         border-color: #e94560;
     }
     [data-testid="stSidebarNav"] { display: none; }
-
     </style>
     """, unsafe_allow_html=True)
     st.markdown("## 💼 포트폴리오")
     st.caption("김재경 · Data Analyst")
     st.divider()
-    if st.button("🏠  홈",         use_container_width=True, key="sb_home"):
+    if st.button("🏠  홈", use_container_width=True, key="sb_home"):
         st.switch_page("Home.py")
     if st.button("🟥  다이소 뷰티 전략 분석", use_container_width=True, key="sb_p1"):
         st.switch_page("pages/1_프로젝트_1.py")
     if st.button("🟩  스타벅스 마케팅 분석", use_container_width=True, key="sb_p2"):
         st.switch_page("pages/2_프로젝트_2.py")
     st.divider()
-
 
 st.markdown("""
 <style>
@@ -57,12 +62,6 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     border-radius: 1.2rem; color: white; margin-bottom: 2rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     height: auto; min-height: fit-content;
-}
-.profile-img-placeholder {
-    width: 120px; height: 120px; border-radius: 50%;
-    background: #e94560; display: flex; align-items: center;
-    justify-content: center; font-size: 3rem; flex-shrink: 0;
-    border: 3px solid rgba(255,255,255,0.2);
 }
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: nowrap; }
@@ -86,6 +85,10 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 .skill-pct { font-size: 0.8rem; color: #999; min-width: 30px; text-align: right; }
 </style>
 """, unsafe_allow_html=True)
+
+cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
+cert2_b64 = img_to_base64("images/직상 자격증_1.png")
+cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
 
 st.markdown(f"""
 <div class="profile-card">
@@ -160,14 +163,6 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
-
-import base64
-
-def img_to_html(img_path, width=40):
-    with open(img_path, "rb") as f:
-        data = base64.b64encode(f.read()).decode()
-    return f'<img src="data:image/png;base64,{data}" width="{width}" height="{width}"/>'
-
 
 tools = [
     (img_to_html("assets/tableau.png"), "Tableau", 85),
