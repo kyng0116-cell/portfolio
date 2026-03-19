@@ -147,7 +147,7 @@ elif tab == "📋 대시보드 설명":
     # 👉 실제 사용: st.image("images/proj2_dash4_desc.png", use_container_width=True)
 
 elif tab == "📊 대시보드":
-    with st.expander("📌 첫 번째 대시보드", expanded=True):
+    with st.expander("대시보드", expanded=True):
         st.markdown("""
         <div style="overflow: hidden; width: 1210px; height: 1375px;">
             <div style="
