@@ -65,7 +65,12 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 }
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: nowrap; }
-.profile-col { min-width: 180px; flex: 1; }
+.profile-col {
+    min-width: 180px; flex: 1;
+    background: rgba(255,255,255,0.08);
+    border-radius: 0.8rem;
+    padding: 0.8rem 1rem;
+}
 .profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
 .profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
@@ -195,11 +200,11 @@ def render_skills(items):
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.markdown("**🔧 Tools**")
-    render_skills(tools)
-with col2:
     st.markdown("**💻 Languages**")
     render_skills(languages)
+with col2:
+    st.markdown("**🔧 Tools**")
+    render_skills(tools)
 with col3:
     st.markdown("**📦 Libraries**")
     render_skills(libraries)
