@@ -83,11 +83,11 @@ tab = st.radio(
 st.divider()
 
 if tab == "💡 인사이트":
-    with open("assets/스타벅스.pdf", "rb") as f:
+    with open("assets/다이소.pdf", "rb") as f:
         st.download_button(
             label="📎 발표자료 다운로드",
             data=f,
-            file_name="스타벅스.pdf",
+            file_name="다이소.pdf",
             mime="application/pdf"
         )
     st.markdown('<div class="section-box"><h3>분석 배경 및 목적</h3><p>어떤 문제를 해결하려 했는지 작성하세요.</p></div>', unsafe_allow_html=True)
