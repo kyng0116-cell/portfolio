@@ -37,9 +37,9 @@ with st.sidebar:
     st.divider()
     if st.button("🏠  홈",         use_container_width=True, key="sb_home"):
         st.switch_page("Home.py")
-    if st.button("🟩  스타벅스 마케팅 분석", use_container_width=True, key="sb_p1"):
+    if st.button("🟥  다이소 뷰티 전략 분석", use_container_width=True, key="sb_p1"):
         st.switch_page("pages/1_프로젝트_1.py")
-    if st.button("🟥  다이소 뷰티 전략 분석", use_container_width=True, key="sb_p2"):
+    if st.button("🟩  스타벅스 마케팅 분석", use_container_width=True, key="sb_p2"):
         st.switch_page("pages/2_프로젝트_2.py")
     st.divider()
 
