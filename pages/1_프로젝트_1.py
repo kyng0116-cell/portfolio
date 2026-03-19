@@ -53,11 +53,14 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     border-radius: 1rem; margin-bottom: 1.5rem;
 }
 .page-header h1 { margin: 0 0 0.3rem 0; font-size: 1.7rem; }
-.page-header p  { margin: 0; opacity: 0.7; font-size: 0.9rem; }
+.page-header p  { margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
 .section-box {
     background: #fff; border-radius: 1rem; padding: 1.8rem;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 1.2rem;
+    color: #1a1a2e;
 }
+.section-box p { color: #1a1a2e; word-break: keep-all; overflow-wrap: break-word; }
+.section-box h4 { color: #1a1a2e; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; border-left: 4px solid #533483; padding-left: 0.75rem; }
 </style>
 """, unsafe_allow_html=True)

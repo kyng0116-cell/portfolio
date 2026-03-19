@@ -46,7 +46,7 @@ with st.sidebar:
     st.divider()
 
 
-st.markdown("""
+sst.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
@@ -64,11 +64,11 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     justify-content: center; font-size: 3rem; flex-shrink: 0;
     border: 3px solid rgba(255,255,255,0.2);
 }
-.profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; }
+.profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: nowrap; }
 .profile-col { min-width: 180px; flex: 1; }
-.profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin: 0 0 0.4rem 0; }
-.profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; opacity: 0.9; }
+.profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
+.profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
     font-size: 1.2rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
@@ -87,26 +87,13 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
-import base64
-
-def img_to_base64(path):
-    try:
-        with open(path, "rb") as f:
-            return base64.b64encode(f.read()).decode()
-    except:
-        return ""
-
-cert1_b64 = img_to_base64("images/사조사 자격증_1.png")  # 👉 나중에 파일명 변경
-cert2_b64 = img_to_base64("images/직상 자격증_1.png")  # 👉 나중에 파일명 변경
-cert3_b64 = img_to_base64("images/청상 자격증.jpeg")  # 👉 나중에 파일명 변경
-
 st.markdown(f"""
 <div class="profile-card">
     <img src="https://ca.slack-edge.com/T088AB0N865-U09EHSCUNSF-3bef5911dc38-512"
          style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.2); flex-shrink:0;">
     <div class="profile-info">
         <h1>김재경</h1>
-        <p style="opacity:0.85; font-size:0.92rem; margin: 0.4rem 0 0.8rem 0;">
+        <p style="color:rgba(255,255,255,0.85); font-size:0.92rem; margin: 0.4rem 0 0.8rem 0;">
             숫자 뒤에 숨은 이유를 찾습니다.<br><br>
             심리학을 전공하며 쌓은 사회통계 기반 위에서, z-score·상관분석·ANOVA 등 다양한 통계 기법을 비즈니스 문제에 적용합니다. 그중에서도 클러스터링으로 패턴을 발견하고, 인과추론(PSM, IPTW, OW)으로 '왜'를 증명해 실행 가능한 의사결정을 이끌어냅니다.
         </p>
@@ -125,39 +112,39 @@ st.markdown(f"""
             <div class="profile-col">
                 <h4>자격증</h4>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">📜 사회조사분석사 2급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">📜 사회조사분석사 2급<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
                     <img src="data:image/png;base64,{cert1_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">📜 직업상담사 2급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">📜 직업상담사 2급<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
                     <img src="data:image/png;base64,{cert2_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">📜 청소년상담사 3급<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">📜 청소년상담사 3급<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
                     <img src="data:image/png;base64,{cert3_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
                 </details>
             </div>
             <div class="profile-col">
                 <h4>경력</h4>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">🏢 테슬라 | 인턴 <br/> (2024.02 ~ 2024.05)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
-                    <div style="margin-top:0.5rem; font-size:0.92rem; opacity:0.85; line-height:1.7;">
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏢 테슬라 | 인턴 <br/> (2024.02 ~ 2024.05)<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <div style="margin-top:0.5rem; font-size:0.92rem; color:rgba(255,255,255,0.85); line-height:1.7;">
                         <p>• 전기차 보조금 지원 신청</p>
                         <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
                         <p>• 지자체 별 관련 공고문 정리</p>
                     </div>
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 <br/>(2025.10 ~ 2026.3)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
-                    <div style="margin-top:0.5rem; font-size:0.92rem; opacity:0.85; line-height:1.7;">
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 <br/>(2025.10 ~ 2026.3)<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <div style="margin-top:0.5rem; font-size:0.92rem; color:rgba(255,255,255,0.85); line-height:1.7;">
                         <p>• SQL, 파이썬, 데이터 분석 관련 하드스킬 학습</p>
                         <p>• 프로젝트 진행</p>
                         <p>• 데이터리터러시 능력, 사회통계역량 강화</p>
                     </div>
                 </details>
                 <details style="margin-bottom:0.3rem;">
-                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem;">🏢 그리트라운지 | 팀장 <br/> (2024.05 ~ 2025.04)<span style="font-size:0.75rem; opacity:0.5;">&nbsp;&nbsp; ▶ 클릭</span></summary>
-                    <div style="margin-top:0.5rem; font-size:0.92rem; opacity:0.85; line-height:1.7;">
+                    <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏢 그리트라운지 | 팀장 <br/> (2024.05 ~ 2025.04)<span style="font-size:0.75rem; color:rgba(255,255,255,0.5);">&nbsp;&nbsp; ▶ 클릭</span></summary>
+                    <div style="margin-top:0.5rem; font-size:0.92rem; color:rgba(255,255,255,0.85); line-height:1.7;">
                         <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장</p>
                         <p>• 전기차 보조금 지원신청</p>
                         <p>• 이메일 제목에서 예약번호 추출 자동화</p>
