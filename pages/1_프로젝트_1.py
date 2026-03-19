@@ -42,7 +42,13 @@ with st.sidebar:
     if st.button("🟥  다이소 뷰티 전략 분석", use_container_width=True, key="sb_p2"):
         st.switch_page("pages/2_프로젝트_2.py")
     st.divider()
-
+with open("assets/다이소.pdf", "rb") as f:
+    st.download_button(
+        label="📎 발표자료 다운로드",
+        data=f,
+        file_name="다이소.pdf",
+        mime="application/pdf"
+    )
 
 st.markdown("""
 <style>
