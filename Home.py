@@ -56,6 +56,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
     border-radius: 1.2rem; color: white; margin-bottom: 2rem;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    height: auto; min-height: fit-content;
 }
 .profile-img-placeholder {
     width: 120px; height: 120px; border-radius: 50%;
