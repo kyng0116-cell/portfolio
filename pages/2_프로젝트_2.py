@@ -122,9 +122,10 @@ elif tab == "📋 대시보드 설명":
                 <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드1.png")}" style="width:900px;">''', unsafe_allow_html=True)
     # 👉 실제 사용: st.image("images/proj1_dash1_desc.png", use_container_width=True)
     st.divider()
-    st.markdown("#### 두 번째 대시보드")
-    st.image("https://via.placeholder.com/900x500?text=Dashboard+2+Description", use_container_width=True)
-    # 👉 실제 사용: st.image("images/proj1_dash2_desc.png", use_container_width=True)
+    st.markdown(f'''
+                <h4 style="margin-bottom:0;">두 번째 대시보드</h4>
+                <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드2.png")}" style="width:900px;">''', unsafe_allow_html=True)
+    #👉 실제 사용: st.image("images/proj1_dash2_desc.png", use_container_width=True)
 
 elif tab == "📊 대시보드":
     with st.expander("대시보드", expanded=True):
