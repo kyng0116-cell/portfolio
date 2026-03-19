@@ -115,7 +115,7 @@ if tab == "💡 인사이트":
 
 elif tab == "📋 대시보드 설명":
     st.markdown("#### 첫 번째 대시보드")
-    st.image(img_to_html("assets/스타벅스_대시보드1.png"), use_container_width=True)
+    st.image("assets/스타벅스_대시보드1.png", use_container_width=True)
     # 👉 실제 사용: st.image("images/proj1_dash1_desc.png", use_container_width=True)
     st.divider()
     st.markdown("#### 두 번째 대시보드")
