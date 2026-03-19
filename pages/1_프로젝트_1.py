@@ -135,6 +135,7 @@ if tab == "💡 인사이트":
 elif tab == "📋 대시보드 설명":
     st.markdown("#### 대시보드 홈 화면")
     st.image("https://via.placeholder.com/900x500?text=Dashboard+1+Description", use_container_width=True)
+    st.divider()
     st.markdown("#### 첫 번째 대시보드")
     st.image("https://via.placeholder.com/900x500?text=Dashboard+1+Description", use_container_width=True)
     # 👉 실제 사용: st.image("images/proj2_dash1_desc.png", use_container_width=True)
