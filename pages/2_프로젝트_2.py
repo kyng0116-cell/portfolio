@@ -75,8 +75,8 @@ st.markdown(f"""
     <div style="display:flex; align-items:center; gap:1rem;">
         {logo_html}
         <div>
-            <h1>starbucks next level</h1>
-            <p>프로젝트 1 한 줄 설명을 입력하세요.</p>
+            <h1>Starbucks Next Level</h1>
+            <p>행동경제학 X 마케팅을 통한 기획 분석</p>
         </div>
     </div>
 </div>
