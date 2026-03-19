@@ -64,9 +64,9 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     height: auto; min-height: fit-content;
 }
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
-.profile-cols { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: nowrap; }
+.profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; }
 .profile-col {
-    min-width: 180px; flex: 1;
+    min-width: 160px; flex: 1;
     background: rgba(255,255,255,0.08);
     border-radius: 0.8rem;
     padding: 0.8rem 1rem;
