@@ -73,8 +73,8 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
 .profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
-.profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
-.profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
+.profile-col h4 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
+.profile-col p  { font-size: 0.94rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
     font-size: 1.2rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
