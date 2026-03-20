@@ -102,7 +102,7 @@ st.markdown(f"""
          style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.2); flex-shrink:0;">
     <div class="profile-info">
         <h1>김재경</h1>
-        <p style="color:rgba(255,255,255,0.85); font-size:0.92rem; margin: 0.4rem 0 0.8rem 0;">
+        <p style="color:rgba(255,255,255,0.85); font-size:1.25rem; margin: 0.4rem 0 0.8rem 0;">
             통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
             End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
             데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
