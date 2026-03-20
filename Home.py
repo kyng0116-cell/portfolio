@@ -60,6 +60,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
+* { word-break: keep-all !important; overflow-wrap: break-word !important; }
 .profile-card {
     display: flex; align-items: flex-start; gap: 2.5rem;
     padding: 2.5rem;
@@ -68,29 +69,26 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     height: auto; min-height: fit-content;
 }
+.profile-info { flex: 1; width: 100%; min-width: 0; }
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
-.profile-col {min-width: 160px; 
-            flex: 1; background: rgba(255,255,255,0.08); 
-            border-radius: 0.8rem; padding: 0.8rem 1rem;
-}
-.profile-col h4 { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
-.profile-col p  { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
+.profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
+.profile-col h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
+.profile-col p  { font-size: 0.88rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
     font-size: 1.2rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
     border-bottom: 2.5px solid #533483; display: inline-block;
 }
 .skill-card {
-    background: #fff; border-radius: 0.8rem; padding: 0.9rem 1.1rem;
+    background: #ffffff !important; border-radius: 0.8rem; padding: 0.9rem 1.1rem;
     margin-bottom: 0.6rem; box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     display: flex; align-items: center; gap: 0.9rem;
 }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
-.skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e; min-width: 85px; }
-.skill-bar-wrap { flex: 1; background: #f0f0f5; border-radius: 99px; height: 7px; overflow: hidden; }
-.skill-bar { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #533483, #0f3460); }
-.skill-pct { font-size: 0.8rem; color: #999; min-width: 30px; text-align: right; }
+.skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e !important; min-width: 85px; }
+.skill-pct { font-size: 0.8rem; color: #999 !important; min-width: 30px; text-align: right; }
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -98,7 +96,6 @@ cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
 
-# 프로필 카드 - 연락처, 학력만
 st.markdown(f"""
 <div class="profile-card">
     <img src="https://ca.slack-edge.com/T088AB0N865-U09EHSCUNSF-3bef5911dc38-512"
@@ -106,13 +103,10 @@ st.markdown(f"""
     <div class="profile-info">
         <h1>김재경</h1>
         <p style="color:rgba(255,255,255,0.85); font-size:0.92rem; margin: 0.4rem 0 0.8rem 0;">
-            통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회기분석 등 다양한 통계기법을 활용 할 수 있습니다.<br/>
-            End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 
-            전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
-            데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 
-            지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
-            새로운 가치 창출: 비즈니스 성장은 물론, 고객의 일상에 실질적인 도움이 되는 새로운 가치를 끊임없이 
-            탐구하고 발견하겠습니다.<br/>
+            통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
+            End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
+            데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
+            새로운 가치 창출: 비즈니스 성장은 물론, 고객의 일상에 실질적인 도움이 되는 새로운 가치를 끊임없이 탐구하고 발견하겠습니다.
         </p>
         <div class="profile-cols">
             <div class="profile-col">
