@@ -134,7 +134,7 @@ if tab == "💡 인사이트":
                 <h4>3. 상권 이원화(Hub & Spoke)</h4><br/> 
                 GIS 데이터를 활용해 외국인 관광객이 몰리는 상위 5% 매장을 'Hub'로 지정하고, 
                 스킨케어 재고 심도를 일반 매장 대비 대폭 강화하는 물류 최적화가 필요합니다.</p></div>""", unsafe_allow_html=True)
-st.markdown("""<div class="section-box"><h3>최적화 전략</h3><p>내용을 입력하세요.</p></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="section-box"><h3>최적화 전략</h3><p>내용을 입력하세요.</p></div>""", unsafe_allow_html=True)
 
 elif tab == "📋 대시보드 설명":
     st.markdown(f'''
