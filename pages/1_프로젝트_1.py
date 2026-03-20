@@ -82,6 +82,7 @@ st.markdown(f"""
     <div style="display:flex; align-items:center; gap:1rem;">
         {logo_html}
         <div>
+            <p style="text-align:right;">🏆최우수상</p>
             <h1>초저가를 넘어 초신뢰로</h1>
             <p>가격이 아닌 '품질 신뢰'를 만들 때 초저가가 초격차로 전환됩니다.</p>
         </div>
