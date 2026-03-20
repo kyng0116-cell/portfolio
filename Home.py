@@ -81,7 +81,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
     display: flex; align-items: center; gap: 0.9rem;
 }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
-.skill-name { font-weight: 600; font-size: 1.125rem; color: #1a1a2e !important; min-width: 85px; }
+.skill-name { font-weight: 600; font-size: 1.125rem; color: #1a1a2e !important; min-width: 120px; white-space: nowrap; }
 .skill-pct { font-size: 0.94rem; color: #999 !important; min-width: 30px; text-align: right; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
