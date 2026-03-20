@@ -210,7 +210,7 @@ with col1:
 
 with col2:
     st.markdown("""
-    <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:280px;">
+    <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟩</span>
             <strong style="font-size:1.1rem; color:#1a1a2e;">starbucks next level</strong>
