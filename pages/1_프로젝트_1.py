@@ -142,10 +142,10 @@ if tab == "💡 인사이트":
         )
     with st.expander("대시보드", expanded=True):
         st.markdown("""
-        <div style="overflow: hidden; width: 1210px; height: 1375px;">
+        <div style="overflow: hidden; width: 1496px; height: 1712.5px;">
             <div style="
                 transform-origin: top left;
-                transform: scale(0.55);
+                transform: scale(0.685);
                 width: 2200px;
                 height: 2500px;
             ">
