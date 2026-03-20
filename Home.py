@@ -16,7 +16,7 @@ def img_to_html(img_path, width=40):
     except:
         return ""
 
-st.set_page_config(page_title="포트폴리오", page_icon="💼", layout="wide")
+st.set_page_config(page_title="포트폴리오", page_icon="💼", layout="wide", initial_sidebar_state="collapsed")
 
 with st.sidebar:
     st.markdown("""
@@ -264,7 +264,7 @@ with col2:
     """, unsafe_allow_html=True)
     if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
         st.switch_page("pages/2_프로젝트_2.py")
-        
+
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
 tools = [

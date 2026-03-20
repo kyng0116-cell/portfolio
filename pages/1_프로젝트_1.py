@@ -11,7 +11,7 @@ def img_to_html(img_path, width=40):
         data = base64.b64encode(f.read()).decode()
     return f'<img src="data:image/png;base64,{data}" width="{width}" height="{width}"/>'
     
-st.set_page_config(page_title="다이소 뷰티 전략 분석", page_icon="🟥", layout="wide")
+st.set_page_config(page_title="다이소 뷰티 전략 분석", page_icon="🟥", layout="wide", initial_sidebar_state="collapsed")
 
 st.markdown("""
 <style>
