@@ -244,7 +244,7 @@ with col2:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟩</span>
-            <strong style="font-size:1.1rem; color:#1a1a2e;">starbucks next level</strong>
+            <strong style="font-size:1.1rem; color:#1a1a2e;">Starbucks Next Level</strong>
         </div>
         <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
