@@ -94,35 +94,34 @@ tab = st.radio(
     index=0, horizontal=True, label_visibility="collapsed"
 )
 
-st.divider()
 st.markdown("""<div class="section-box">
 <h3>프로젝트 개요</h3>
 <div style="display:flex; gap:2rem; align-items:flex-start;">
-    <div style="flex:1;">
-        <p><strong>프로젝트명:</strong> starbucks next level</p>
-        <p><strong>기간:</strong> 2026.01 (1개월)</p>
-        <p><strong>역할:</strong> 데이터 분석</p>
+    <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.01 (1개월)</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 분석</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
-        <p><strong>Language</strong><br/>SQL, Python</p>
-        <br/>
-        <p><strong>분석 기법</strong><br/>
-        K-means 클러스터링, 엘보우 방법, Kruskal-Wallis 비모수 검정, 카이제곱 검정, 행동경제학 프레임워크</p>
-        <br/>
-        <p><strong>시각화</strong><br/>Tableau, Matplotlib, Seaborn</p>
+        <p style="font-size:0.82rem; color:#e94560; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">엘보우 방법</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">Kruskal-Wallis</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">행동경제학</span>
+        </div>
     </div>
     <div style="flex:2;">
-        <p style="color:#555; font-size:0.92rem;">
-        스타벅스 프로모션 데이터를 분석하여 불필요한 마케팅 비용을 줄이고 고객 피로도를 낮추기 위한 채널별 효과 정량화 및 고객 세그먼트 기반 전략을 수립했습니다.
+        <p style="font-size:0.88rem; color:#555; line-height:1.8; margin-bottom:1rem;">
+        스타벅스 프로모션 데이터 분석을 통해 <strong>채널별 순수 효과를 정량화</strong>하고, 고객 세그먼트 기반 맞춤형 마케팅 전략 기준을 도출했습니다.
         </p>
-        <br/>
-        <p style="font-size:0.9rem; font-weight:600; color:#1a1a2e;">주요 분석 내용</p>
-        <p style="font-size:0.88rem; color:#444; line-height:1.8;">
-        • 비정형 데이터(딕셔너리 구조) 전처리 및 정형화<br/>
-        • 혼재 변수 통제를 통한 채널 순수 효과 분석<br/>
-        • SNS 43.97%p, Mobile 19.41%p, Web 7.16%p 채널별 효과 정량화<br/>
-        • K-means 클러스터링으로 고객 4개 세그먼트 분류<br/>
-        • 행동경제학(손실 회피, 현재 편향, 사회적 증거) 기반 인사이트 도출<br/>
-        • Tableau 파라미터 액션 및 동적 필터링 대시보드 구현
+        <p style="font-size:0.82rem; font-weight:600; color:#e94560; margin-bottom:0.5rem;">핵심 성과</p>
+        <p style="font-size:0.88rem; color:#444; line-height:2;">
+        📡 SNS 43.97%p · Mobile 19.41%p · Web 7.16%p 채널 효과 정량화<br/>
+        👥 K-means 기반 고객 4개 세그먼트 분류<br/>
+        🧠 행동경제학 3가지 인사이트 도출<br/>
+        📊 Tableau 동적 필터링 대시보드 구현
         </p>
     </div>
 </div>
