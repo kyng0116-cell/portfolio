@@ -294,6 +294,10 @@ def render_skills(items):
                 <span style="font-size:0.94rem; color:#999; margin-right:0.4rem;">숙련도</span>
                 {filled}<span style="color:#ddd;">{empty}</span>
             </div>
+        <div style="margin-left:auto; font-size:1.1rem; color:#e94560; letter-spacing:2px; text-align:right; display:flex; align-items:center; gap:0.3rem;">
+                <span style="font-size:0.94rem; color:#999;">숙련도</span>
+                {filled}<span style="color:#ddd;">{empty}</span>
+            </div>
         </div>
         """, unsafe_allow_html=True)
 
