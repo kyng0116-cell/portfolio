@@ -56,6 +56,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spacing: 1px; }
 * { word-break: keep-all !important; overflow-wrap: break-word !important; }
+strong { font-size: 1.25rem !important; }
 .page-header { background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; padding: 1.8rem 2rem; border-radius: 1rem; margin-bottom: 1.5rem; }
 .page-header h1 { margin: 0 0 0.3rem 0; font-size: 1.9rem; }
 .page-header p  { margin: 0; color: rgba(255,255,255,0.7); font-size: 1.125rem; }

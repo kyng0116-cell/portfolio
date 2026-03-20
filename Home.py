@@ -56,6 +56,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spacing: 1px; }
 * { word-break: keep-all !important; overflow-wrap: break-word !important; }
+strong { font-size: 1.25rem !important; }
 .profile-card {
     display: flex; align-items: flex-start; gap: 2.5rem;
     padding: 2.5rem;
