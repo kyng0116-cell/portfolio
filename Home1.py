@@ -18,6 +18,11 @@ def img_to_html(img_path, width=40):
 
 st.set_page_config(page_title="포트폴리오", page_icon="💼", layout="wide")
 
+st.markdown("""
+<style>
+* { word-break: keep-all; overflow-wrap: break-word; }
+</style>
+""", unsafe_allow_html=True)
 with st.sidebar:
     st.markdown("""
     <style>
@@ -82,7 +87,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
 .skill-name { font-weight: 600; font-size: 1.125rem; color: #1a1a2e !important; min-width: 85px; }
-.skill-pct { font-size: 0.94rem; color: #999 !important; min-width: 30px; text-align: right; }
+.skill-pct { font-size: 0.8rem; color: #999 !important; min-width: 30px; text-align: right; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
@@ -97,7 +102,7 @@ st.markdown(f"""
          style="width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid rgba(255,255,255,0.2); flex-shrink:0;">
     <div class="profile-info">
         <h1>김재경</h1>
-        <p style="color:rgba(255,255,255,0.85); font-size:1.125rem; margin: 0.4rem 0 0.8rem 0; line-height:2;">
+        <p style="color:rgba(255,255,255,0.85); font-size:1.125rem; margin: 0.4rem 0 0.8rem 0;">
             ● 통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
             ● End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
             ● 데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
@@ -106,20 +111,21 @@ st.markdown(f"""
         <div class="profile-cols">
             <div class="profile-col">
                 <h4>연락처</h4>
-                <p>📧 kyng0116@gmail.com</p>
-                <p>📱 010-5021-9745</p>
-                <p>🔗 <a href="https://github.com/kyng0116-cell" target="_blank" style="color:white;">GitHub</a></p>
-                <p>🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
+                <p style="font-size:1.125rem;">📧 kyng0116@gmail.com</p>
+                <p style="font-size:1.125rem;">📱 010-5021-9745</p>
+                <p style="font-size:1.125rem;">🔗 <a href="https://github.com/kyng0116-cell" target="_blank" style="color:white;">GitHub</a></p>
+                <p style="font-size:1.125rem;">🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
             </div>
             <div class="profile-col">
                 <h4>학력</h4>
-                <p>🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
+                <p style="font-size:1.125rem;">🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
             </div>
         </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
+# 자격증 & 경력 섹션
 st.markdown('<div class="section-title">📋 자격증 & 경력</div>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
@@ -127,17 +133,17 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown(f"""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">자격증</h4>
+        <h4 style="color:#533483; font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 0.4rem 0;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert1_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 직업상담사 2급<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 직업상담사 2급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert2_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 청소년상담사 3급<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 청소년상담사 3급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert3_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
     </div>
@@ -146,26 +152,26 @@ with col1:
 with col2:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
+        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px;">경력</h4>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>• 전기차 보조금 지원 신청</p>
-                <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
-                <p>• 지자체 별 관련 공고문 정리</p>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:0.94rem; color:#444; line-height:1.7; word-break:keep-all;">
+                <p>• 전기차 보조금 지원 신청<br/>
+                • 누락 서류 파악 및 담당자에게 서류 정보 전달<br/>
+                • 지자체 별 관련 공고문 정리</p>
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
+            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:0.88rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• SQL, 파이썬, 데이터 분석 관련 하드스킬 학습</p>
                 <p>• 프로젝트 진행</p>
                 <p>• 데이터리터러시 능력, 사회통계역량 강화</p>
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
+            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:0.88rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장</p>
                 <p>• 전기차 보조금 지원신청</p>
                 <p>• 이메일 제목에서 예약번호 추출 자동화</p>
@@ -175,8 +181,8 @@ with col2:
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
+            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:0.88rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• 산학협력 사업 행정 지원 전반 관리</p>
                 <p>• 기업 애로기술 과제 신청서 검토 및 진행 상황 관리</p>
                 <p>• 학생 현장실습 신청 및 배치 관리</p>
@@ -195,30 +201,30 @@ with col1:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #e60012; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟥</span>
-            <strong style="font-size:1.25rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
+            <strong style="font-size:1.1rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
         </div>
-        <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
+        <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">RNN/LSTM</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">층화 샘플링</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">OCR</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">GIS 분석</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">DB 정규화</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">Tableau</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">OCR</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">DB 정규화</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
         </div>
         <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#e60012;">30만건</div>
-                <div style="font-size:0.94rem; color:#888;">리뷰 데이터</div>
+                <div style="font-size:0.75rem; color:#888;">리뷰 데이터</div>
             </div>
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#e60012;">83.3%</div>
-                <div style="font-size:0.94rem; color:#888;">연착륙 제품 중 스킨케어</div>
+                <div style="font-size:0.75rem; color:#888;">연착륙 제품 중 스킨케어</div>
             </div>
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#e60012;">144%</div>
-                <div style="font-size:0.94rem; color:#888;">뷰티 카테고리 성장률</div>
+                <div style="font-size:0.75rem; color:#888;">뷰티 카테고리 성장률</div>
             </div>
         </div>
     </div>
@@ -231,35 +237,36 @@ with col2:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟩</span>
-            <strong style="font-size:1.25rem; color:#1a1a2e;">Starbucks Next Level</strong>
+            <strong style="font-size:1.1rem; color:#1a1a2e;">Starbucks Next Level</strong>
         </div>
-        <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
+        <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">K-means</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">엘보우 방법</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">Kruskal-Wallis</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">카이제곱 검정</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">행동경제학</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.94rem; color:#555;">Tableau</span>
-        </div>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">엘보우 방법</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Kruskal-Wallis</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">행동경제학</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
+        </div><br/>
         <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#00704a;">43.97%p</div>
-                <div style="font-size:0.94rem; color:#888;">SNS 채널 효과</div>
+                <div style="font-size:0.75rem; color:#888;">SNS 채널 효과</div>
             </div>
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#00704a;">4개</div>
-                <div style="font-size:0.94rem; color:#888;">고객 세그먼트</div>
+                <div style="font-size:0.75rem; color:#888;">고객 세그먼트</div>
             </div>
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#00704a;">3가지</div>
-                <div style="font-size:0.94rem; color:#888;">행동경제학 인사이트</div>
+                <div style="font-size:0.75rem; color:#888;">행동경제학 인사이트</div>
             </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
     if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
         st.switch_page("pages/2_프로젝트_2.py")
+
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
@@ -281,6 +288,7 @@ libraries = [
     (img_to_html("assets/scipy.png"), "Scipy", 80),
 ]
 
+
 def render_skills(items):
     for icon, name, pct in items:
         stars = round(pct / 20)
@@ -291,7 +299,7 @@ def render_skills(items):
             <div class="skill-icon">{icon}</div>
             <div class="skill-name">{name}</div>
             <div style="margin-left:auto; font-size:1.1rem; color:#e94560; letter-spacing:2px; text-align:right;">
-                <span style="font-size:0.94rem; color:#999; margin-right:0.4rem;">숙련도</span>
+                <span style="font-size:0.75rem; color:#999; margin-right:0.4rem;">숙련도</span>
                 {filled}<span style="color:#ddd;">{empty}</span>
             </div>
         </div>
