@@ -182,9 +182,13 @@ with col1:
         <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">OCR</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">DB 정규화</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
+
         </div>
         <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
             <div style="text-align:center;">
@@ -215,10 +219,11 @@ with col2:
         <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">엘보우 방법</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Kruskal-Wallis</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">행동경제학</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
-        </div>
         <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#00704a;">43.97%p</div>
@@ -238,7 +243,7 @@ with col2:
     if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
         st.switch_page("pages/2_프로젝트_2.py")
 
-        
+
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
