@@ -215,6 +215,9 @@ with col2:
             <span style="font-size:1.5rem;">🟩</span>
             <strong style="font-size:1.1rem; color:#1a1a2e;">starbucks next level</strong>
         </div>
+        <div style="background:#fff; border-radius:1rem; padding:1.5rem; 
+                box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #e60012;
+                min-height: 280px;"> 
         <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">K-means</span>
