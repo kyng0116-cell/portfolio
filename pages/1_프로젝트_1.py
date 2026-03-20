@@ -83,7 +83,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 tab = st.radio(
     label="섹션 선택",
-    options=["💡 인사이트", "📋 대시보드 설명", "📊 대시보드"],
+    options=["💡 인사이트", "📋 대시보드 설명"],
     index=0, horizontal=True, label_visibility="collapsed"
 )
 st.divider()
@@ -96,6 +96,23 @@ if tab == "💡 인사이트":
             file_name="다이소.pdf",
             mime="application/pdf"
         )
+    with st.expander("대시보드", expanded=True):
+        st.markdown("""
+        <div style="overflow: hidden; width: 1210px; height: 1375px;">
+            <div style="
+                transform-origin: top left;
+                transform: scale(0.55);
+                width: 2200px;
+                height: 2500px;
+            ">
+                <iframe src="https://public.tableau.com/views/_17733968701580/sheet0?:embed=y&:showVizHome=no&:toolbar=yes"
+                    width="2200"
+                    height="2500"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
     st.markdown("""<div class="section-box"><h3>분석 배경 및 목적</h3><br/><p><strong>거시적 경제 위기:</strong> 2026년 한국 경제성장률이 $1.9%$로 전망되며, 구조적 저성장인 'L자형 침체'가 고착화되는 국면입니다. 
                 이에 따라 소비자들이 필수재 외의 지출을 줄이는 상황입니다.<br/><br/>
                 <strong>다이소 뷰티의 역설적 성장:</strong> 불황 속에서도 다이소 뷰티 카테고리는 144% 성장하며 
@@ -157,25 +174,7 @@ elif tab == "📋 대시보드 설명":
                 <h4 style="margin-bottom:0;">네 번째 대시보드 </h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드4.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
-
-elif tab == "📊 대시보드":
-    with st.expander("대시보드", expanded=True):
-        st.markdown("""
-        <div style="overflow: hidden; width: 1210px; height: 1375px;">
-            <div style="
-                transform-origin: top left;
-                transform: scale(0.55);
-                width: 2200px;
-                height: 2500px;
-            ">
-                <iframe src="https://public.tableau.com/views/_17733968701580/sheet0?:embed=y&:showVizHome=no&:toolbar=yes"
-                    width="2200"
-                    height="2500"
-                    frameborder="0">
-                </iframe>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+   
 
         
 
