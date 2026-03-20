@@ -272,12 +272,18 @@ libraries = [
     (img_to_html("assets/scipy.png"), "Scipy", 80),
 ]
 
+
 def render_skills(items):
     for icon, name, pct in items:
         stars = round(pct / 20)  # 100% → 5개 기준
         filled = "★" * stars
         empty = "☆" * (5 - stars)
         st.markdown(f"""
+                    <div class="skill-name">{name}</div>
+                        <div style="flex:1; font-size:1.1rem; color:#e94560; letter-spacing:2px;">
+                        <span style="font-size:0.75rem; color:#999; margin-right:0.4rem;">숙련도</span>
+                        {filled}<span style="color:#ddd;">{empty}</span>
+                    </div>
         <div class="skill-card">
             <div class="skill-icon">{icon}</div>
             <div class="skill-name">{name}</div>
