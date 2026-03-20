@@ -100,6 +100,12 @@ cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
 
+st.markdown("""
+<style>
+* { word-break: keep-all !important; overflow-wrap: break-word !important; }
+</style>
+""", unsafe_allow_html=True)
+
 st.markdown(f"""
 <div class="profile-card">
     <img src="https://ca.slack-edge.com/T088AB0N865-U09EHSCUNSF-3bef5911dc38-512"
