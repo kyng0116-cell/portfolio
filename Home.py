@@ -100,6 +100,7 @@ cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
 
+col1, col2 = st.columns(2) 
 with col1:
     st.markdown(f"""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
