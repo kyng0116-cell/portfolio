@@ -191,11 +191,14 @@ st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=
 
 col1, col2 = st.columns(2)
 
+daiso_logo = img_to_html("assets/daiso.png", width=40)
+starbucks_logo = img_to_html("assets/starbucks.png", width=40)
+
 with col1:
-    st.markdown("""
+    st.markdown(f"""
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #e60012; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
-            <span style="font-size:1.5rem;">🟥</span>
+            {daiso_logo}
             <strong style="font-size:1.375rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
         </div>
         <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
@@ -228,10 +231,10 @@ with col1:
         st.switch_page("pages/1_프로젝트_1.py")
 
 with col2:
-    st.markdown("""
+    st.markdown(f"""
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
-            <span style="font-size:1.5rem;">🟩</span>
+            {starbucks_logo}
             <strong style="font-size:1.375rem; color:#1a1a2e;">Starbucks Next Level</strong>
         </div>
         <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
