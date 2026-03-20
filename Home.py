@@ -212,7 +212,7 @@ with col1:
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             {daiso_logo}
             <strong style="font-size:1.375rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
-            <p style="text-align:right;">🏆최우수상</p>
+            <p style="margin-left:auto; margin-bottom:0;">🏆최우수상</p>
         </div>
         <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
