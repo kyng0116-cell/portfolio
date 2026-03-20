@@ -84,7 +84,7 @@ st.markdown(f"""
 
 tab = st.radio(
     label="섹션 선택",
-    options=["💡 인사이트", "📋 대시보드 설명", "📊 대시보드"],
+    options=["💡 인사이트", "📋 대시보드 설명"],
     index=0, horizontal=True, label_visibility="collapsed"
 )
 st.divider()
