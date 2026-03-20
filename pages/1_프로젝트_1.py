@@ -114,8 +114,9 @@ st.markdown("""<div class="section-box">
         </div>
     </div>
     <div style="flex:2;">
-        <p style="font-size:0.88rem; color:#555; line저성장 기조 속에서도 144%의 기록적인 성장을 달성한 다이소 뷰티의 핵심 동인을 데이터로 규명하고, '데이터 기반의 초신뢰' 구축을 통해 지속 가능한 성장을 견인할 2026년 통합 성장 전략을 수립했습니다.-height:1.8; margin-bottom:1rem;">
-        
+        <p style="font-size:0.88rem; color:#555; line-height:1.8; margin-bottom:1rem;">
+        저성장 기조 속에서도 144%의 기록적인 성장을 달성한 다이소 뷰티의 핵심 동인을 데이터로 규명하고, 
+        '데이터 기반의 초신뢰' 구축을 통해 지속 가능한 성장을 견인할 2026년 통합 성장 전략을 수립했습니다.
         </p>
         <p style="font-size:0.82rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
         <p style="font-size:0.88rem; color:#444; line-height:2;">
