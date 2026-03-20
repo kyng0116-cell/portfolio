@@ -95,7 +95,8 @@ st.markdown("""<div class="section-box">
 <div style="display:flex; gap:2rem; align-items:flex-start;">
     <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.01.08 ~ 2026.01.21</p>
-        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>역할</strong>&nbsp;&nbsp; (5인팀) / 데이터 전처리, 채널 별 효과크기 산출, 대시보드 제작</p>
+        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>인원</strong>&nbsp;&nbsp; 5인팀</p>
+        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 전처리, 채널 별 효과크기 산출, 대시보드 제작</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
