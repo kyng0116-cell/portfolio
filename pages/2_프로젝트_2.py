@@ -219,25 +219,6 @@ elif tab == "📋 대시보드 설명":
     st.markdown(f'''
                 <h4 style="margin-bottom:0;">두 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드2.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
-elif tab == "📊 대시보드":
-    with st.expander("대시보드", expanded=True):
-        st.markdown("""
-        <div style="overflow: hidden; width: 1210px; height: 715px;">
-            <div style="
-                transform-origin: top left;
-                transform: scale(0.55);
-                width: 2200px;
-                height: 1300px;
-            ">
-                <iframe src="https://public.tableau.com/views/starbucks_17734801363140/sheet1?:embed=y&:showVizHome=no&:toolbar=yes"
-                    width="2200"
-                    height="1300"
-                    frameborder="0">
-                </iframe>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-        
         # 👉 예시:
         # import plotly.express as px, pandas as pd
         # df = pd.read_csv("data/proj1.csv")
