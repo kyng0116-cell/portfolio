@@ -98,8 +98,8 @@ st.markdown("""<div class="section-box">
 <h3>프로젝트 개요</h3>
 <div style="display:flex; gap:2rem; align-items:flex-start;">
     <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
-        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.01 (1개월)</p>
-        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 분석</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.01.08~2026.01.21</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>역할</strong>&nbsp;&nbsp; (5인팀)/데이터 전처리, 채널 별 효과크기 산출, 대시보드 제작</p>
         <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
         <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
@@ -114,7 +114,7 @@ st.markdown("""<div class="section-box">
     </div>
     <div style="flex:2;">
         <p style="font-size:0.88rem; color:#555; line-height:1.8; margin-bottom:1rem;">
-        스타벅스 프로모션 데이터 분석을 통해 <strong>채널별 순수 효과를 정량화</strong>하고, 고객 세그먼트 기반 맞춤형 마케팅 전략 기준을 도출했습니다.
+        스타벅스 프로모션 데이터 분석을 통해 채널별 순수 효과를 정량화하고, 고객 세그먼트 기반 맞춤형 마케팅 전략 기준을 도출했습니다.
         </p>
         <p style="font-size:0.82rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
         <p style="font-size:0.88rem; color:#444; line-height:2;">
