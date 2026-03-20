@@ -74,9 +74,9 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 .profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
 .profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
 .profile-col h4 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
-.profile-col p  { font-size: 0.94rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
+.profile-col p  { font-size: 1.125rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
-    font-size: 1.2rem; font-weight: 700; color: #1a1a2e;
+    font-size: 1.25rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
     border-bottom: 2.5px solid #533483; display: inline-block;
 }
@@ -86,7 +86,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
     display: flex; align-items: center; gap: 0.9rem;
 }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
-.skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e !important; min-width: 85px; }
+.skill-name { font-weight: 600; font-size: 1.125rem; color: #1a1a2e !important; min-width: 85px; }
 .skill-pct { font-size: 0.8rem; color: #999 !important; min-width: 30px; text-align: right; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
@@ -103,10 +103,10 @@ st.markdown(f"""
     <div class="profile-info">
         <h1>김재경</h1>
         <p style="color:rgba(255,255,255,0.85); font-size:1.125rem; margin: 0.4rem 0 0.8rem 0;">
-            통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
-            End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
-            데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
-            새로운 가치 창출: 비즈니스 성장은 물론, 고객의 일상에 실질적인 도움이 되는 새로운 가치를 끊임없이 탐구하고 발견하겠습니다.
+            ● 통계 분석 역량: 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
+            ● End-to-End 역량: 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
+            ● 데이터 기반 문제 해결: 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
+            ● 새로운 가치 창출: 비즈니스 성장은 물론, 고객의 일상에 실질적인 도움이 되는 새로운 가치를 끊임없이 탐구하고 발견하겠습니다.
         </p>
         <div class="profile-cols">
             <div class="profile-col">
