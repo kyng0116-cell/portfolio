@@ -60,6 +60,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
+* { word-break: keep-all !important; overflow-wrap: break-word !important; }
 .profile-card {
     display: flex; align-items: flex-start; gap: 2.5rem;
     padding: 2.5rem;
@@ -84,15 +85,14 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
     border-bottom: 2.5px solid #533483; display: inline-block;
 }
 .skill-card {
-    background: #fff; border-radius: 0.8rem; padding: 0.9rem 1.1rem;
+    background: #ffffff !important; border-radius: 0.8rem; padding: 0.9rem 1.1rem;
     margin-bottom: 0.6rem; box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     display: flex; align-items: center; gap: 0.9rem;
 }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
-.skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e; min-width: 85px; }
-.skill-bar-wrap { flex: 1; background: #f0f0f5; border-radius: 99px; height: 7px; overflow: hidden; }
-.skill-bar { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #533483, #0f3460); }
-.skill-pct { font-size: 0.8rem; color: #999; min-width: 30px; text-align: right; }
+.skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e !important; min-width: 85px; }
+.skill-pct { font-size: 0.8rem; color: #999 !important; min-width: 30px; text-align: right; }
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
 

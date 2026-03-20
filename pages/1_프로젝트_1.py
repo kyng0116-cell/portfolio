@@ -63,14 +63,12 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 }
 .page-header h1 { margin: 0 0 0.3rem 0; font-size: 1.7rem; }
 .page-header p  { margin: 0; color: rgba(255,255,255,0.7); font-size: 0.9rem; }
-.section-box {
-    background: #fff; border-radius: 1rem; padding: 1.8rem;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 1.2rem;
-    color: #1a1a2e;
-}
+.section-box { background: #ffffff !important; border-radius: 1rem; padding: 1.8rem; box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 1.2rem; color: #1a1a2e !important; }
+.section-box * { color: #1a1a2e !important; }
 .section-box p { color: #1a1a2e; word-break: keep-all; overflow-wrap: break-word; }
 .section-box h4 { color: #1a1a2e; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; border-left: 4px solid #533483; padding-left: 0.75rem; }
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -82,7 +80,7 @@ st.markdown(f"""
         {logo_html}
         <div>
             <h1>초저가를 넘어 초신뢰로</h1>
-            <p>가격이 아닌 ‘품질 신뢰’를 만들 때 초저가가 초격차로 전환됩니다.</p>
+            <p>가격이 아닌 '품질 신뢰'를 만들 때 초저가가 초격차로 전환됩니다.</p>
         </div>
     </div>
 </div>
