@@ -305,7 +305,7 @@ def render_skills(items):
         <div class="skill-card">
             <div class="skill-icon">{icon}</div>
             <div class="skill-name">{name}</div>
-            <div style="margin-left:auto; font-size:1.1rem; color:#533483; letter-spacing:2px; text-align:right;">
+            <div style="margin-left:auto; font-size:1.1rem; color:#e94560; letter-spacing:2px; text-align:right;">
                 <span style="font-size:0.75rem; color:#999; margin-right:0.4rem;">숙련도</span>
                 {filled}<span style="color:#ddd;">{empty}</span>
             </div>
