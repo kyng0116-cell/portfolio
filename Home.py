@@ -68,7 +68,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 .profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
 .profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
 .profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
-.profile-col h4 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
+.profile-col h4 { font-size: 1.375rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
 .profile-col p  { font-size: 1.125rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
     font-size: 1.5rem; font-weight: 700; color: #1a1a2e;
@@ -127,7 +127,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown(f"""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">자격증</h4>
+        <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert1_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
@@ -146,7 +146,7 @@ with col1:
 with col2:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
+        <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
@@ -195,7 +195,7 @@ with col1:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #e60012; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟥</span>
-            <strong style="font-size:1.25rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
+            <strong style="font-size:1.375rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
         </div>
         <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
@@ -231,7 +231,7 @@ with col2:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a; min-height:320px;">
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
             <span style="font-size:1.5rem;">🟩</span>
-            <strong style="font-size:1.25rem; color:#1a1a2e;">Starbucks Next Level</strong>
+            <strong style="font-size:1.375rem; color:#1a1a2e;">Starbucks Next Level</strong>
         </div>
         <p style="font-size:1.125rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">

@@ -68,7 +68,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 .section-box * { color: #1a1a2e !important; }
 .section-box p { color: #1a1a2e; font-size: 1.125rem; word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
-.section-box h4 { color: #1a1a2e; font-size: 1.25rem; }
+.section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
 .section-box strong { font-size: 1.125rem; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
@@ -232,23 +232,23 @@ if tab == "💡 인사이트":
 
 elif tab == "📋 대시보드 설명":
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.25rem;">표지</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem;">표지</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_표지.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.25rem;">첫 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem;">첫 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드1.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.25rem;">두 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem;">두 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드2.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.25rem;">세 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem;">세 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드3.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.25rem;">네 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem;">네 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드4.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
 
