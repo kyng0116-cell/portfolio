@@ -121,9 +121,9 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="section-title">📋 자격증 & 경력</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">📋 자격증 & 수상이력 & 경력</div>', unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown(f"""
@@ -145,6 +145,14 @@ with col1:
     """, unsafe_allow_html=True)
 
 with col2:
+    st.markdown("""
+    <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
+        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">수상이력</h4>
+        <p style="font-size:1.125rem; color:#1a1a2e;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
