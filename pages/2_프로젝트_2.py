@@ -97,6 +97,23 @@ if tab == "💡 인사이트":
             file_name="스타벅스.pdf",
             mime="application/pdf"
         )
+    with st.expander("대시보드", expanded=True):
+        st.markdown("""
+        <div style="overflow: hidden; width: 1210px; height: 715px;">
+            <div style="
+                transform-origin: top left;
+                transform: scale(0.55);
+                width: 2200px;
+                height: 1300px;
+            ">
+                <iframe src="https://public.tableau.com/views/starbucks_17734801363140/sheet1?:embed=y&:showVizHome=no&:toolbar=yes"
+                    width="2200"
+                    height="1300"
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
     st.markdown("""<div class="section-box"><h3>분석 배경 및 목적</h3><br/>
                 <p><strong>해결하려는 문제:</strong> : 결과 중심적 분석에서 프로세스 중심의 행동 전환 분석으로의 전환.<br/>
                 단편적인 인구통계 정보만으로는 프로모션 효율의 변동 원인을 객관적으로 설명하기 어렵습니다. 
