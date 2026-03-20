@@ -94,6 +94,41 @@ tab = st.radio(
 )
 st.divider()
 
+st.markdown("""<div class="section-box">
+<h3>프로젝트 개요</h3>
+<div style="display:flex; gap:2rem; align-items:flex-start;">
+    <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.02 ~ 2026.03 (2개월)</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 분석 담당 (5인 팀)</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
+        <p style="margin:0.3rem 0; font-size:0.88rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
+        <br/>
+        <p style="font-size:0.82rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">OCR</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.78rem; color:#555;">DB 정규화</span>
+        </div>
+    </div>
+    <div style="flex:2;">
+        <p style="font-size:0.88rem; color:#555; line-height:1.8; margin-bottom:1rem;">
+        불황 속 144% 성장한 다이소 뷰티의 성장 동인을 분석하고, <strong>납 검출 이슈로 무너진 신뢰를 데이터 기반으로 회복</strong>하기 위한 2026년 전략을 수립했습니다.
+        </p>
+        <p style="font-size:0.82rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
+        <p style="font-size:0.88rem; color:#444; line-height:2;">
+        🔬 900여 제품 수동 검증 및 식약처 인증 상품명 매칭<br/>
+        📊 매출 영향 요인 우선순위 규명: 카테고리 &gt; 브랜드<br/>
+        💡 기능성의 조절 효과 발견 (단독 효과 없음, 카테고리/브랜드와 결합 시 증폭)<br/>
+        🗺 GIS 기반 Hub &amp; Spoke 물류 전략 제안<br/>
+        🛒 입점 전략 시뮬레이터 개발
+        </p>
+    </div>
+</div>
+</div>""", unsafe_allow_html=True)
+
 if tab == "💡 인사이트":
     with open("assets/다이소.pdf", "rb") as f:
         st.download_button(
