@@ -274,12 +274,14 @@ libraries = [
 
 def render_skills(items):
     for icon, name, pct in items:
+        stars = round(pct / 20)  # 100% → 5개 기준
+        filled = "★" * stars
+        empty = "☆" * (5 - stars)
         st.markdown(f"""
         <div class="skill-card">
             <div class="skill-icon">{icon}</div>
             <div class="skill-name">{name}</div>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:{pct}%"></div></div>
-            <div class="skill-pct">{pct}%</div>
+            <div style="flex:1; font-size:1.1rem; color:#e94560; letter-spacing:2px;">{filled}<span style="color:#ddd;">{empty}</span></div>
         </div>
         """, unsafe_allow_html=True)
 
