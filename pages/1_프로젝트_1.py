@@ -115,7 +115,7 @@ st.markdown("""<div class="section-box">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">DB 정규화</span>
         </div>
     </div>
-    <div style="flex:2;">
+    <div style="flex:1.5;">
         <p style="font-size:1.125rem; color:#555; line-height:1.8; margin-bottom:1rem;">
         저성장 기조 속에서도 144%의 기록적인 성장을 달성한 다이소 뷰티의 핵심 동인을 데이터로 규명하고, 
         '데이터 기반의 초신뢰' 구축을 통해 지속 가능한 성장을 견인할 2026년 통합 성장 전략을 수립했습니다.
