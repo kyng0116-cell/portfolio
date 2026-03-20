@@ -93,7 +93,40 @@ tab = st.radio(
     options=["💡 인사이트", "📋 대시보드 설명"],
     index=0, horizontal=True, label_visibility="collapsed"
 )
+
 st.divider()
+st.markdown("""<div class="section-box">
+<h3>프로젝트 개요</h3>
+<div style="display:flex; gap:2rem; align-items:flex-start;">
+    <div style="flex:1;">
+        <p><strong>프로젝트명:</strong> starbucks next level</p>
+        <p><strong>기간:</strong> 2026.01 (1개월)</p>
+        <p><strong>역할:</strong> 데이터 분석</p>
+        <br/>
+        <p><strong>Language</strong><br/>SQL, Python</p>
+        <br/>
+        <p><strong>분석 기법</strong><br/>
+        K-means 클러스터링, 엘보우 방법, Kruskal-Wallis 비모수 검정, 카이제곱 검정, 행동경제학 프레임워크</p>
+        <br/>
+        <p><strong>시각화</strong><br/>Tableau, Matplotlib, Seaborn</p>
+    </div>
+    <div style="flex:2;">
+        <p style="color:#555; font-size:0.92rem;">
+        스타벅스 프로모션 데이터를 분석하여 불필요한 마케팅 비용을 줄이고 고객 피로도를 낮추기 위한 채널별 효과 정량화 및 고객 세그먼트 기반 전략을 수립했습니다.
+        </p>
+        <br/>
+        <p style="font-size:0.9rem; font-weight:600; color:#1a1a2e;">주요 분석 내용</p>
+        <p style="font-size:0.88rem; color:#444; line-height:1.8;">
+        • 비정형 데이터(딕셔너리 구조) 전처리 및 정형화<br/>
+        • 혼재 변수 통제를 통한 채널 순수 효과 분석<br/>
+        • SNS 43.97%p, Mobile 19.41%p, Web 7.16%p 채널별 효과 정량화<br/>
+        • K-means 클러스터링으로 고객 4개 세그먼트 분류<br/>
+        • 행동경제학(손실 회피, 현재 편향, 사회적 증거) 기반 인사이트 도출<br/>
+        • Tableau 파라미터 액션 및 동적 필터링 대시보드 구현
+        </p>
+    </div>
+</div>
+</div>""", unsafe_allow_html=True)
 
 if tab == "💡 인사이트":
     with open("assets/스타벅스.pdf", "rb") as f:
