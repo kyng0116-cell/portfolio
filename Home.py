@@ -111,14 +111,14 @@ st.markdown(f"""
         <div class="profile-cols">
             <div class="profile-col">
                 <h4>연락처</h4>
-                <p style="font-size:0.92rem;">📧 kyng0116@gmail.com</p>
-                <p style="font-size:0.92rem;">📱 010-5021-9745</p>
-                <p style="font-size:0.92rem;">🔗 <a href="https://github.com/kyng0116-cell" target="_blank" style="color:white;">GitHub</a></p>
-                <p style="font-size:0.92rem;">🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
+                <p style="font-size:1.125rem;">📧 kyng0116@gmail.com</p>
+                <p style="font-size:1.125rem;">📱 010-5021-9745</p>
+                <p style="font-size:1.125rem;">🔗 <a href="https://github.com/kyng0116-cell" target="_blank" style="color:white;">GitHub</a></p>
+                <p style="font-size:1.125rem;">🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
             </div>
             <div class="profile-col">
                 <h4>학력</h4>
-                <p style="font-size:0.92rem;">🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
+                <p style="font-size:1.125rem;">🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
             </div>
         </div>
     </div>
@@ -133,7 +133,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown(f"""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">자격증</h4>
+        <h4 style="color:#533483; font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 0.4rem 0;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert1_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
