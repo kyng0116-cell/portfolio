@@ -168,6 +168,78 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #e60012;">
+        <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
+            <span style="font-size:1.5rem;">🟥</span>
+            <strong style="font-size:1.1rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
+        </div>
+        <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#e60012;">30만건</div>
+                <div style="font-size:0.75rem; color:#888;">리뷰 데이터</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#e60012;">83.3%</div>
+                <div style="font-size:0.75rem; color:#888;">연착륙 제품 중 스킨케어</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#e60012;">144%</div>
+                <div style="font-size:0.75rem; color:#888;">뷰티 카테고리 성장률</div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
+        st.switch_page("pages/1_프로젝트_1.py")
+
+with col2:
+    st.markdown("""
+    <div style="background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 16px rgba(0,0,0,0.07); border-top: 4px solid #00704a;">
+        <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
+            <span style="font-size:1.5rem;">🟩</span>
+            <strong style="font-size:1.1rem; color:#1a1a2e;">starbucks next level</strong>
+        </div>
+        <p style="font-size:0.88rem; color:#444; margin-bottom:1rem;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Kruskal-Wallis</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#00704a;">43.97%p</div>
+                <div style="font-size:0.75rem; color:#888;">SNS 채널 효과</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#00704a;">4개</div>
+                <div style="font-size:0.75rem; color:#888;">고객 세그먼트</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.3rem; font-weight:700; color:#00704a;">3가지</div>
+                <div style="font-size:0.75rem; color:#888;">행동경제학 인사이트</div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
+        st.switch_page("pages/2_프로젝트_2.py")
+
+        
+
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
 tools = [
