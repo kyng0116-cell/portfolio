@@ -135,15 +135,15 @@ with col1:
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
         <h4 style="color:#533483; font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 0.4rem 0;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert1_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 직업상담사 2급<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 직업상담사 2급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert2_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 청소년상담사 3급<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 청소년상담사 3급<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert3_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
         </details>
     </div>
@@ -152,13 +152,13 @@ with col1:
 with col2:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">경력</h4>
+        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px;">경력</h4>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:0.88rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>• 전기차 보조금 지원 신청</p>
-                <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
-                <p>• 지자체 별 관련 공고문 정리</p>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:0.94rem; color:#444; line-height:1.7; word-break:keep-all;">
+                <p>• 전기차 보조금 지원 신청
+                • 누락 서류 파악 및 담당자에게 서류 정보 전달
+                • 지자체 별 관련 공고문 정리</p>
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
