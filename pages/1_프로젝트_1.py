@@ -13,6 +13,12 @@ def img_to_html(img_path, width=40):
     
 st.set_page_config(page_title="다이소 뷰티 전략 분석", page_icon="🟥", layout="wide")
 
+st.markdown("""
+<style>
+* { word-break: keep-all; overflow-wrap: break-word; }
+</style>
+""", unsafe_allow_html=True)
+
 with st.sidebar:
     st.markdown("""
     <style>
