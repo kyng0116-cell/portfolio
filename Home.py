@@ -188,6 +188,7 @@ with col1:
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">GIS 분석</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">DB 정규화</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.78rem; color:#555;">Tableau</span>
+        </div>
         <div style="display:flex; gap:1.5rem; margin-bottom:1rem;">
             <div style="text-align:center;">
                 <div style="font-size:1.3rem; font-weight:700; color:#e60012;">30만건</div>
