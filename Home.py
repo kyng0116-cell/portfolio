@@ -40,7 +40,7 @@ with st.sidebar:
     }
     [data-testid="stSidebar"] .stButton button:hover {
         background: rgba(233,69,96,0.25);
-        border-color: #e94560;
+        border-color: #533483;
     }
     [data-testid="stSidebarNav"] { display: none; }
     </style>
@@ -81,7 +81,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 .section-title {
     font-size: 1.2rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
-    border-bottom: 2.5px solid #e94560; display: inline-block;
+    border-bottom: 2.5px solid #533483; display: inline-block;
 }
 .skill-card {
     background: #fff; border-radius: 0.8rem; padding: 0.9rem 1.1rem;
@@ -91,7 +91,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; }
 .skill-icon { font-size: 1.4rem; width: 1.8rem; text-align: center; }
 .skill-name { font-weight: 600; font-size: 0.88rem; color: #1a1a2e; min-width: 85px; }
 .skill-bar-wrap { flex: 1; background: #f0f0f5; border-radius: 99px; height: 7px; overflow: hidden; }
-.skill-bar { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #e94560, #0f3460); }
+.skill-bar { height: 100%; border-radius: 99px; background: linear-gradient(90deg, #533483, #0f3460); }
 .skill-pct { font-size: 0.8rem; color: #999; min-width: 30px; text-align: right; }
 </style>
 """, unsafe_allow_html=True)
@@ -140,7 +140,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.markdown(f"""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#e94560; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">자격증</h4>
+        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <img src="data:image/png;base64,{cert1_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
@@ -159,7 +159,7 @@ with col1:
 with col2:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
-        <h4 style="color:#e94560; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">경력</h4>
+        <h4 style="color:#533483; margin:0 0 0.8rem 0; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px;">경력</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.75rem; color:#999;">&nbsp;&nbsp; ▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:0.88rem; color:#444; line-height:1.7; word-break:keep-all;">
@@ -305,7 +305,7 @@ def render_skills(items):
         <div class="skill-card">
             <div class="skill-icon">{icon}</div>
             <div class="skill-name">{name}</div>
-            <div style="margin-left:auto; font-size:1.1rem; color:#e94560; letter-spacing:2px; text-align:right;">
+            <div style="margin-left:auto; font-size:1.1rem; color:#533483; letter-spacing:2px; text-align:right;">
                 <span style="font-size:0.75rem; color:#999; margin-right:0.4rem;">숙련도</span>
                 {filled}<span style="color:#ddd;">{empty}</span>
             </div>
