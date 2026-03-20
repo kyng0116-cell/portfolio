@@ -91,6 +91,7 @@ strong { font-size: 1.25rem !important; }
 cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
+cert4_b64 = img_to_base64("images/최우수_프로젝트.png")
 
 st.markdown(f"""
 <div class="profile-card">
@@ -148,7 +149,10 @@ with col2:
     st.markdown("""
     <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
         <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">수상이력</h4>
-        <p style="font-size:1.125rem; color:#1a1a2e;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)</p>
+        <details style="margin-bottom:0.3rem;">
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <img src="data:image/png;base64,{cert4_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
+        </details>
     </div>
     """, unsafe_allow_html=True)
 
