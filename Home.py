@@ -76,7 +76,7 @@ html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spa
 .profile-col h4 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
 .profile-col p  { font-size: 1.125rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
 .section-title {
-    font-size: 1.25rem; font-weight: 700; color: #1a1a2e;
+    font-size: 1.5rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
     border-bottom: 2.5px solid #533483; display: inline-block;
 }
