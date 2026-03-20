@@ -91,7 +91,7 @@ strong { font-size: 1.25rem !important; }
 cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
-cert4_b64 = img_to_base64("images/최우수_프로젝트.png")
+cert4_b64 = img_to_base64("images/최우수상.png")
 
 st.markdown(f"""
 <div class="profile-card">
