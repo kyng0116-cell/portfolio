@@ -65,7 +65,7 @@ strong { font-size: 1.25rem !important; }
 .section-box p { color: #1a1a2e; font-size: 1.125rem; word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
 .section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
-.section-box strong { font-size: 1.125rem; }
+.section-box strong { font-size: 1.25rem; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
@@ -99,7 +99,7 @@ st.markdown("""<div class="section-box">
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
-        <p style="font-size:1.125rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
+        <p style="font-size:1.25rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
         <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">K-means</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">엘보우 방법</span>
@@ -112,7 +112,7 @@ st.markdown("""<div class="section-box">
         <p style="font-size:1.125rem; color:#555; line-height:1.8; margin-bottom:1rem;">
         스타벅스 프로모션 데이터 분석을 통해 채널별 순수 효과를 정량화하고, 고객 세그먼트 기반 맞춤형 마케팅 전략 기준을 도출했습니다.
         </p>
-        <p style="font-size:1.125rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
+        <p style="font-size:1.25rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
         <p style="font-size:1.125rem; color:#444; line-height:2;">
         📡 SNS 43.97%p · Mobile 19.41%p · Web 7.16%p 채널 효과 정량화<br/>
         👥 K-means 기반 고객 4개 세그먼트 분류<br/>

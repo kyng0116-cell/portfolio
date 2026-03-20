@@ -70,7 +70,7 @@ strong { font-size: 1.25rem !important; }
 .section-box p { color: #1a1a2e; font-size: 1.125rem; word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
 .section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
-.section-box strong { font-size: 1.125rem; }
+.section-box strong { font-size: 1.25rem; }
 [data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
@@ -104,7 +104,7 @@ st.markdown("""<div class="section-box">
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
-        <p style="font-size:1.125rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
+        <p style="font-size:1.25rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
         <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">RNN/LSTM</span>
@@ -119,7 +119,7 @@ st.markdown("""<div class="section-box">
         저성장 기조 속에서도 144%의 기록적인 성장을 달성한 다이소 뷰티의 핵심 동인을 데이터로 규명하고, 
         '데이터 기반의 초신뢰' 구축을 통해 지속 가능한 성장을 견인할 2026년 통합 성장 전략을 수립했습니다.
         </p>
-        <p style="font-size:1.125rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
+        <p style="font-size:1.25rem; font-weight:600; color:#533483; margin-bottom:0.5rem;">핵심 성과</p>
         <p style="font-size:1.125rem; color:#444; line-height:2;">
         🔬 900여 제품 수동 검증 및 식약처 인증 상품명 매칭<br/>
         📊 매출 영향 요인 우선순위 규명: 카테고리 &gt; 브랜드<br/>
