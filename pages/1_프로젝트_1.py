@@ -71,7 +71,7 @@ strong { font-size: 1.25rem !important; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
 .section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
 .section-box strong { font-size: 1.25rem; }
-[data-testid="stAppViewContainer"] {background:#ffffff !important }
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
 

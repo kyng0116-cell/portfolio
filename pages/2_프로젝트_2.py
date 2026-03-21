@@ -34,7 +34,7 @@ with st.sidebar:
         border-radius: 0.5rem;
     }
     [data-testid="stSidebar"] .stButton button:hover {
-        background:#ffffff !important;
+        background:rgba(233,69,96,0.25);
         border-color: #533483;
     }
     [data-testid="stSidebarNav"] { display: none; }
