@@ -182,12 +182,10 @@ with col2:
         </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>• 산학협력 사업 행정 지원 전반 관리</p>
-                <p>• 기업 애로기술 과제 신청서 검토 및 진행 상황 관리</p>
-                <p>• 학생 현장실습 신청 및 배치 관리</p>
-                <p>• 사업단 성과 데이터 수집 및 뉴스레터 발행 관리</p>
-            </div>
+            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
+                <p>• <span style="color:#533483; font-weight:600;">사업단 핵심 지표(KPI) 데이터 관리:</span> 산학협력 사업의 주요 성과 데이터를 정기적으로 수집 및 가공하여, 대내외 홍보용 성과 뉴스레터 기획 및 발행 주도<br/>
+                • <span style="color:#533483; font-weight:600;">프로그램 참여 데이터베이스 운영:</span> 기업 애로기술 과제 신청서 및 학생 현장실습 매칭 데이터를 체계적으로 분류 및 엑셀화하여 행정 처리 속도 개선<br/>
+                • <span style="color:#533483; font-weight:600;">이해관계자 요구사항 조율:</span> 학교, 학생, 참여 기업 간의 다양한 요구사항 및 진행 현황을 트래킹하여 원활한 산학협력 프로세스 지원
         </details>
     </div>
     """, unsafe_allow_html=True)
