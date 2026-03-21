@@ -118,17 +118,21 @@ st.markdown(f"""
                 <p>🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
             </div>
             <div class="profile-col">
-                <h4>학력</h4>
-                <p>🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
+                <h4 >수상이력</h4>
+        <details style="margin-bottom:0.3rem;">
+            <p>🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <img src="data:image/png;base64,{cert4_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
+        </details>
+    </div>
             </div>
         </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="section-title">📋 자격증 & 수상이력 & 경력</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">📋 자격증 & 경력</div>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 
 with col1:
     st.markdown(f"""
@@ -150,17 +154,6 @@ with col1:
     """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown(f"""
-    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">수상이력</h4>
-        <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <img src="data:image/png;base64,{cert4_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
-        </details>
-    </div>
-    """, unsafe_allow_html=True)
-
-with col3:
     st.markdown("""
     <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem; border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
