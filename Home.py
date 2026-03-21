@@ -162,19 +162,15 @@ with col2:
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
                 <p>•<span style="color:#533483; font-weight:600;"> 데이터 시각화 및 대시보드 구축:</span> Tableau를 활용한 비즈니스 지표 시각화 및 Streamlit 기반의 인터랙티브 데이터 분석 포트폴리오 웹사이트 기획<br/>
                 • <span style="color:#533483; font-weight:600;">실무 밀착형 프로젝트 주도:</span> 유통/뷰티 도메인(다이소 등)을 포함하여 비즈니스 문제 정의부터 결론 도출까지 총 4개의 데이터 분석 프로젝트 완수<br/>
-                • <span style="color:#533483; font-weight:600;">고급 분석 방법론 적용:</span> 인과추론, 통계적 가설 검정, 데이터 리터러시 역량을 바탕으로 단순 집계를 넘어선 논리적 비즈니스 인사이트 도출 훈련</p>
- </p>
-            </div>
+                • <span style="color:#533483; font-weight:600;">고급 분석 방법론 적용:</span> 인과추론, 통계적 가설 검정, 데이터 리터러시 역량을 바탕으로 단순 집계를 넘어선 논리적 비즈니스 인사이트 도출 훈련</p>       
         </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
-                <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장</p>
-                <p>• 전기차 보조금 지원신청</p>
-                <p>• 이메일 제목에서 예약번호 추출 자동화</p>
-                <p>• 신청 누락 방지 시스템 설계</p>
-                <p>• 지자체 별 특이사항 혹은 고객 특이사항(영주권자, 재외동포, 타국 영주권 소지자)등 정리 후 공유</p>
-                <p>• 지자체 별 공고문 정리</p>
+                <p>• <span style="color:#533483; font-weight:600;">업무 프로세스 자동화 및 효율성 증대</span> 시스템 접근 제한으로 인한 수기 업무의 비효율을 해결하고자, Google Apps Script(GAS)를 활용해 이메일 제목 내 회원/예약 번호를 일괄 추출하는 자동화 스크립트를 직접 개발하여 업무 소요 시간 대폭 단축<br/>
+                • <span style="color:#533483; font-weight:600;">데이터 트래킹 시스템 기획 및 운영:</span> 수천 건의 전기차 보조금 신청건에 대한 누락 방지 트래킹 시스템을 설계하여 신청 성공률 및 운영 안정성 극대화<br/>
+                • <span style="color:#533483; font-weight:600;">비정형 데이터의 정형화 및 지식 자산화:</span> 전국 지자체별 복잡한 공고문과 특이 고객(영주권자, 재외동포 등)의 케이스 데이터를 규격화하고 가이드라인으로 배포하여 팀원들의 업무 혼선 방지<br/>
+                • <span style="color:#533483; font-weight:600;">팀 리딩 및 인수인계 총괄:</span> 테슬라 전기차 보조금 실무 전반을 성공적으로 이관받고, 팀장으로서 프로젝트 진행 상황 데이터화 및 리포팅 수행</p>
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
