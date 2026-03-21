@@ -127,6 +127,7 @@ st.markdown('<div class="section-title">📋 자격증 & 수상이력 & 경력</
 col1, col2, col3 = st.columns(3)
 
 with col1:
+    
     st.markdown(f"""
     <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">자격증</h4>
@@ -146,28 +147,10 @@ with col1:
     """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown(f"""
-    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
-        <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">수상이력</h4>
-        <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <img src="data:image/png;base64,{cert4_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
-        </details>
-    </div>
-    """, unsafe_allow_html=True)
+    
 
 with col3:
     st.markdown("""
-    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
-        <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
-        <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 <br/>(2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>• 전기차 보조금 지원 신청</p>
-                <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
-                <p>• 지자체 별 관련 공고문 정리</p>
-            </div>
-        </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 <br/>(2025.10 ~ 2026.3)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
@@ -185,6 +168,16 @@ with col3:
                 <p>• 신청 누락 방지 시스템 설계</p>
                 <p>• 지자체 별 특이사항 혹은 고객 특이사항(영주권자, 재외동포, 타국 영주권 소지자)등 정리 후 공유</p>
                 <p>• 지자체 별 공고문 정리</p>
+            </div>
+        </details>
+        <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
+        <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
+        <details style="margin-bottom:0.3rem;">
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 <br/>(2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
+                <p>• 전기차 보조금 지원 신청</p>
+                <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
+                <p>• 지자체 별 관련 공고문 정리</p>
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
