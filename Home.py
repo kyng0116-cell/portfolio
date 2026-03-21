@@ -128,7 +128,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown(f"""
-    <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">자격증</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">📜 사회조사분석사 2급<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
@@ -147,7 +147,7 @@ with col1:
 
 with col2:
     st.markdown(f"""
-    <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.25rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">수상이력</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
@@ -158,7 +158,7 @@ with col2:
 
 with col3:
     st.markdown("""
-    <div style="background:rgba(255,255,255,0.05); border-radius:1rem; padding:1.2rem; border:1px solid rgba(255,255,255,0.1);">
+    <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem;  border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 <br/>(2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
