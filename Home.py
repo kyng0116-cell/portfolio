@@ -160,9 +160,9 @@ with col2:
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>•데이터 시각화 및 대시보드 구축: Tableau를 활용한 비즈니스 지표 시각화 및 Streamlit 기반의 인터랙티브 데이터 분석 포트폴리오 웹사이트 기획<br/>
-                •실무 밀착형 프로젝트 주도: 유통/뷰티 도메인(다이소 등)을 포함하여 비즈니스 문제 정의부터 결론 도출까지 총 4개의 데이터 분석 프로젝트 완수<br/>
-                •고급 분석 방법론 적용: 인과추론, 통계적 가설 검정, 데이터 리터러시 역량을 바탕으로 단순 집계를 넘어선 논리적 비즈니스 인사이트 도출 훈련</p>
+                <p><strong>• 데이터 시각화 및 대시보드 구축:</strong> Tableau를 활용한 비즈니스 지표 시각화 및 Streamlit 기반의 인터랙티브 데이터 분석 포트폴리오 웹사이트 기획<br/>
+                • <strong>실무 밀착형 프로젝트 주도:</strong> 유통/뷰티 도메인(다이소 등)을 포함하여 비즈니스 문제 정의부터 결론 도출까지 총 4개의 데이터 분석 프로젝트 완수<br/>
+                • <strong>고급 분석 방법론 적용:</strong> 인과추론, 통계적 가설 검정, 데이터 리터러시 역량을 바탕으로 단순 집계를 넘어선 논리적 비즈니스 인사이트 도출 훈련</p>
  </p>
             </div>
         </details>
