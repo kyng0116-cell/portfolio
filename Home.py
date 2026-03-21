@@ -114,11 +114,8 @@ st.markdown(f"""
                 <p>🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
             </div>
             <div class="profile-col">
-                <h4>연락처</h4>
-                <p>📧 kyng0116@gmail.com</p>
-                <p>📱 010-5021-9745</p>
-                <p>🔗 <a href="https://github.com/kyng0116-cell" target="_blank" style="color:white;">GitHub</a></p>
-                <p>🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank" style="color:white;">LinkedIn</a></p>
+                <h4>학력</h4>
+                <p>🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
             </div>
             <div class="profile-col">
                 <h4>학력</h4>
@@ -205,7 +202,7 @@ with col3:
         </details>
     </div>
     """, unsafe_allow_html=True)
-
+    
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
