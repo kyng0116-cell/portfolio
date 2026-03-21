@@ -158,7 +158,7 @@ with col2:
     <div style="background:#ffffff !important; border-radius:1rem; padding:1.2rem; border:1px solid #e0e0e0;">
         <h4 style="color:#533483; font-size:1.375rem; text-transform:uppercase; letter-spacing:1px; margin:0 0 0.8rem 0;">경력</h4>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 <br/>(2025.10 ~ 2026.3)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 스파르타 내일배움캠프 데이터분석가 과정 | 학생 (2025.10 ~ 2026.3)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• SQL, 파이썬, 데이터 분석 관련 하드스킬 학습</p>
                 <p>• 프로젝트 진행</p>
@@ -166,7 +166,7 @@ with col2:
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 <br/>(2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• 테슬라 전기차 보조금 업무 인수인계 후 팀장으로 업무 확장</p>
                 <p>• 전기차 보조금 지원신청</p>
@@ -177,7 +177,7 @@ with col2:
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 <br/>(2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• 전기차 보조금 지원 신청</p>
                 <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
@@ -185,7 +185,7 @@ with col2:
             </div>
         </details>
         <details style="margin-bottom:0.3rem;">
-            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 <br/>(2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+            <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
                 <p>• 산학협력 사업 행정 지원 전반 관리</p>
                 <p>• 기업 애로기술 과제 신청서 검토 및 진행 상황 관리</p>
