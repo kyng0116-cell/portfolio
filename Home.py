@@ -120,7 +120,7 @@ st.markdown(f"""
         <div class="profile-col">
             <h4>수상이력</h4>
             <details style="margin-bottom:0.3rem;">
-                <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:rgba(255,255,255,0.5); margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+                <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:rgba(255,255,255,0.5); margin-left:0.8rem;"><br/>▶ 펼쳐보기</span></summary>
                 <img src="data:image/png;base64,{cert4_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
             </details>
         </div>
