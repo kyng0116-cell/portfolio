@@ -100,7 +100,7 @@ st.markdown("""<div class="section-box">
 <h3>프로젝트 개요</h3>
 <div style="display:flex; gap:2rem; align-items:flex-start;">
     <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
-        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.02.09 ~ 2026.03.11</p>
+        <strong>기간</strong>&nbsp;&nbsp; <p>2026.02.09 ~ 2026.03.11</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>인원</strong>&nbsp;&nbsp; 5인</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 정제, 데이터 전처리, 인과추론, 런칭 시뮬레이션 , 대시보드 제작</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
