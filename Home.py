@@ -163,6 +163,7 @@ with col2:
                 <p>•<span style="color:#533483; font-weight:600;"> 데이터 시각화 및 대시보드 구축:</span> Tableau를 활용한 비즈니스 지표 시각화 및 Streamlit 기반의 인터랙티브 데이터 분석 포트폴리오 웹사이트 기획<br/>
                 • <span style="color:#533483; font-weight:600;">실무 밀착형 프로젝트 주도:</span> 유통/뷰티 도메인(다이소 등)을 포함하여 비즈니스 문제 정의부터 결론 도출까지 총 4개의 데이터 분석 프로젝트 완수<br/>
                 • <span style="color:#533483; font-weight:600;">고급 분석 방법론 적용:</span> 인과추론, 통계적 가설 검정, 데이터 리터러시 역량을 바탕으로 단순 집계를 넘어선 논리적 비즈니스 인사이트 도출 훈련</p>       
+            </div> 
         </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
@@ -178,14 +179,16 @@ with col2:
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
                 <p>• <span style="color:#533483; font-weight:600;">대용량 고객 데이터 검증:</span> 전국 단위 보조금 지원 신청 서류 데이터를 수집하고, 필수 정보 누락 및 오류를 꼼꼼하게 교차 검증하여 데이터 정합성 확보<br/>
                 • <span style="color:#533483; font-weight:600;">정책 데이터 모니터링 및 요약:</span> 수시로 변동되는 지자체별 보조금 관련 공고문을 신속하게 파악하고, 핵심 조건 데이터를 정리하여 유관 부서에 적시 공유<br/>
-                • <span style="color:#533483; font-weight:600;">고객 커뮤니케이션 지원:</span> 서류 보완이 필요한 고객 데이터를 추출하고, 명확한 안내를 통해 신속한 보조금 접수 완료 지원
+                • <span style="color:#533483; font-weight:600;">고객 커뮤니케이션 지원:</span> 서류 보완이 필요한 고객 데이터를 추출하고, 명확한 안내를 통해 신속한 보조금 접수 완료 지원</p>
+            </div> 
         </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
                 <p>• <span style="color:#533483; font-weight:600;">사업단 핵심 지표(KPI) 데이터 관리:</span> 산학협력 사업의 주요 성과 데이터를 정기적으로 수집 및 가공하여, 대내외 홍보용 성과 뉴스레터 기획 및 발행 주도<br/>
                 • <span style="color:#533483; font-weight:600;">프로그램 참여 데이터베이스 운영:</span> 기업 애로기술 과제 신청서 및 학생 현장실습 매칭 데이터를 체계적으로 분류 및 엑셀화하여 행정 처리 속도 개선<br/>
-                • <span style="color:#533483; font-weight:600;">이해관계자 요구사항 조율:</span> 학교, 학생, 참여 기업 간의 다양한 요구사항 및 진행 현황을 트래킹하여 원활한 산학협력 프로세스 지원
+                • <span style="color:#533483; font-weight:600;">이해관계자 요구사항 조율:</span> 학교, 학생, 참여 기업 간의 다양한 요구사항 및 진행 현황을 트래킹하여 원활한 산학협력 프로세스 지원</p>
+            </div> 
         </details>
     </div>
     """, unsafe_allow_html=True)
