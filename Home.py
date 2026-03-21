@@ -176,10 +176,9 @@ with col2:
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 테슬라 | 인턴 (2024.02 ~ 2024.05)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all;">
-                <p>• 전기차 보조금 지원 신청</p>
-                <p>• 누락 서류 파악 및 담당자에게 서류 정보 전달</p>
-                <p>• 지자체 별 관련 공고문 정리</p>
-            </div>
+                <p>• <span style="color:#533483; font-weight:600;">대용량 고객 데이터 검증:</span> 전국 단위 보조금 지원 신청 서류 데이터를 수집하고, 필수 정보 누락 및 오류를 꼼꼼하게 교차 검증하여 데이터 정합성 확보<br/>
+                • <span style="color:#533483; font-weight:600;">정책 데이터 모니터링 및 요약:</span> 수시로 변동되는 지자체별 보조금 관련 공고문을 신속하게 파악하고, 핵심 조건 데이터를 정리하여 유관 부서에 적시 공유<br/>
+                • <span style="color:#533483; font-weight:600;">고객 커뮤니케이션 지원:</span> 서류 보완이 필요한 고객 데이터를 추출하고, 명확한 안내를 통해 신속한 보조금 접수 완료 지원
         </details>
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 위덕대학교 LINC3.0사업단 | 계약직 (2023.08 ~ 2023.10)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
