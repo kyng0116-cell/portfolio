@@ -117,13 +117,13 @@ st.markdown(f"""
                 <h4>학력</h4>
                 <p>🎓 단국대학교 | 심리학 학사 <br/> (2015.03 ~ 2020.02)</p>
             </div>
-            <div class="profile-col">
-                <h4 >수상이력</h4>
-        <details style="margin-bottom:0.3rem;">
-            <p>🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
-            <img src="data:image/png;base64,{cert4_b64}" style="width:100%; margin-top:0.5rem; border-radius:0.5rem;">
-        </details>
-    </div>
+        <div class="profile-col">
+            <h4>수상이력</h4>
+            <details style="margin-bottom:0.3rem;">
+                <summary style="cursor:pointer; list-style:none; font-size:0.92rem; color:white;">🏆 스파르타 최종 프로젝트 최우수상 (2026.03)<span style="font-size:0.94rem; color:rgba(255,255,255,0.5); margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
+                <img src="data:image/png;base64,{cert4_b64}" style="width:400px; margin-top:0.5rem; border-radius:0.5rem;">
+            </details>
+        </div>
             </div>
         </div>
     </div>
