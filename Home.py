@@ -285,7 +285,7 @@ tools = [
     ('<img src="https://cdn.simpleicons.org/mysql" width="40" height="40" alt="MySQL"/>', "MySQL", 75),
     ('<img src="https://cdn.simpleicons.org/jupyter" width="40" height="40" alt="Jupyter"/>', "Jupyter Notebook", 85),
     ('<img src="https://cdn.simpleicons.org/dbeaver" width="40" height="40" alt="DBeaver"/>', "DBeaver", 85),
-('<img src="https://cdn.simpleicons.org/vscode" width="40" height="40" alt="VSCode"/>', "VS Code", 85)
+   (img_to_html("assets/vscode.png"), "VS Code", 85)
 ]
 
 languages = [
