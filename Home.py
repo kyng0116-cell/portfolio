@@ -276,24 +276,24 @@ with col2:
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
 tools = [
-    (img_to_html("assets/tableau.png"), "Tableau", 85),
-    ('<img src="https://cdn.simpleicons.org/mysql" width="40" height="40" alt="MySQL"/>', "MySQL", 75),
-    ('<img src="https://cdn.simpleicons.org/jupyter" width="40" height="40" alt="Jupyter"/>', "Jupyter Notebook", 85),
-    ('<img src="https://cdn.simpleicons.org/dbeaver" width="40" height="40" alt="DBeaver"/>', "DBeaver", 85),
+    (img_to_html("assets/tableau.png"), "Tableau", 80),
+    ('<img src="https://cdn.simpleicons.org/mysql" width="40" height="40" alt="MySQL"/>', "MySQL", 80),
+    ('<img src="https://cdn.simpleicons.org/jupyter" width="40" height="40" alt="Jupyter"/>', "Jupyter Notebook", 60),
+    ('<img src="https://cdn.simpleicons.org/dbeaver" width="40" height="40" alt="DBeaver"/>', "DBeaver", 80),
    (img_to_html("assets/vscode.png"), "VS Code", 85)
 ]
 
 languages = [
-    ('<img src="https://cdn.simpleicons.org/python" width="40" height="40" alt="Python"/>', "Python", 90),
-    (img_to_html("assets/SQL.png"), "SQL", 85),
+    ('<img src="https://cdn.simpleicons.org/python" width="40" height="40" alt="Python"/>', "Python", 60),
+    (img_to_html("assets/SQL.png"), "SQL", 80),
 ]
 libraries = [
-    ('<img src="https://cdn.simpleicons.org/pandas" width="40" height="40" alt="Pandas"/>', "Pandas", 90),
+    ('<img src="https://cdn.simpleicons.org/pandas" width="40" height="40" alt="Pandas"/>', "Pandas", 80),
     (img_to_html("assets/matplotlib.png"), "Matplotlib", 80),
-    (img_to_html("assets/seaborn.png"), "Seaborn", 78),
-    ('<img src="https://cdn.simpleicons.org/scikitlearn" width="40" height="40" alt="Scikit-learn"/>', "Scikit-learn", 70),
-    ("🗺", "Folium", 75),
-    (img_to_html("assets/scipy.png"), "Scipy", 80),
+    (img_to_html("assets/seaborn.png"), "Seaborn", 80),
+    ('<img src="https://cdn.simpleicons.org/scikitlearn" width="40" height="40" alt="Scikit-learn"/>', "Scikit-learn", 60),
+    ("🗺", "Folium", 60),
+    (img_to_html("assets/scipy.png"), "Scipy", 60),
 ]
 
 def render_skills(items):
