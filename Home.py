@@ -168,7 +168,7 @@ with col2:
         <details style="margin-bottom:0.3rem;">
             <summary style="cursor:pointer; list-style:none; font-size:1.125rem; color:#1a1a2e; word-break:keep-all; overflow-wrap:break-word;">🏢 그리트라운지 | 팀장 (2024.05 ~ 2025.04)<span style="font-size:0.94rem; color:#999; margin-left:0.8rem;">▶ 펼쳐보기</span></summary>
             <div style="margin-top:0.5rem; font-size:1.125rem; color:#444; line-height:1.7; word-break:keep-all; padding-left:1.5rem;">
-                <p>• <span style="color:#533483; font-weight:600;">업무 프로세스 자동화 및 효율성 증대</span> 시스템 접근 제한으로 인한 수기 업무의 비효율을 해결하고자, Google Apps Script(GAS)를 활용해 이메일 제목 내 회원/예약 번호를 일괄 추출하는 자동화 스크립트를 직접 개발하여 업무 소요 시간 대폭 단축<br/>
+                <p>• <span style="color:#533483; font-weight:600;">업무 프로세스 자동화 및 효율성 증대:</span> 시스템 접근 제한으로 인한 수기 업무의 비효율을 해결하고자, Google Apps Script(GAS)를 활용해 이메일 제목 내 회원/예약 번호를 일괄 추출하는 자동화 스크립트를 직접 개발하여 업무 소요 시간 대폭 단축<br/>
                 • <span style="color:#533483; font-weight:600;">데이터 트래킹 시스템 기획 및 운영:</span> 수천 건의 전기차 보조금 신청건에 대한 누락 방지 트래킹 시스템을 설계하여 신청 성공률 및 운영 안정성 극대화<br/>
                 • <span style="color:#533483; font-weight:600;">비정형 데이터의 정형화 및 지식 자산화:</span> 전국 지자체별 복잡한 공고문과 특이 고객(영주권자, 재외동포 등)의 케이스 데이터를 규격화하고 가이드라인으로 배포하여 팀원들의 업무 혼선 방지<br/>
                 • <span style="color:#533483; font-weight:600;">팀 리딩 및 인수인계 총괄:</span> 테슬라 전기차 보조금 실무 전반을 성공적으로 이관받고, 팀장으로서 프로젝트 진행 상황 데이터화 및 리포팅 수행</p>
