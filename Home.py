@@ -135,11 +135,11 @@ st.markdown(f"""
     <div class="profile-info">
         <h1>김재경</h1>
         <p style="color:#1a1a2e; font-size:1.05rem; margin: 0.4rem 0 0.8rem 0; line-height:2;">
-            <strong>● 통계 분석 역량:</strong> 데이터 이면의 숨겨진 맥락을 읽고, 인과추론, 회귀분석 등 다양한 통계기법을 활용할 수 있습니다.<br/>
-            <strong>● End-to-End 역량:</strong> 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 데이터 라이프사이클을 주도적으로 수행합니다.<br/>
-            <strong>● 데이터 기반 문제 해결:</strong> 퍼널(Funnel) 분석 및 잔존율(Retention) 분석 등의 방법론을 활용해 지표를 진단하고 비즈니스 문제를 해결합니다.<br/>
-            <strong>● 새로운 가치 창출:</strong> 비즈니스 성장은 물론, 고객의 일상에 실질적인 도움이 되는 새로운 가치를 끊임없이 탐구하고 발견하겠습니다.<br/>
-            <strong>● 직관적인 데이터 시각화:</strong> 태블로(Tableau)를 활용해 복잡한 데이터를 직관적인 대시보드로 구현하고, 이해관계자의 빠르고 정확한 데이터 기반 의사결정을 지원합니다.
+            <strong>● 통계 분석:</strong> 숫자 뒤에 숨은 맥락을 읽고, 인과추론·회귀분석 등 다양한 통계 기법으로 데이터를 해석합니다.
+            <strong>● End-to-End 분석:</strong> 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 분석 과정을 빠짐없이 수행합니다.
+            <strong>● 문제 해결:</strong> 퍼널·잔존율 분석 등을 활용해 지표를 진단하고, 비즈니스 문제의 원인을 데이터로 찾아냅니다.
+            <strong>● 가치 창출:</strong> 비즈니스 성장뿐만 아니라 고객 일상에 실질적인 도움이 되는 인사이트를 끊임없이 탐구합니다.
+            <strong>● 데이터 시각화:</strong> Tableau로 복잡한 데이터를 직관적인 대시보드로 구현해 빠른 의사결정을 지원합니다.
         </p>
         <div class="profile-cols">
             <div class="profile-col">
