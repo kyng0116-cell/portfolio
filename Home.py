@@ -60,17 +60,17 @@ strong { font-size: 1.25rem !important; }
 .profile-card {
     display: flex; align-items: flex-start; gap: 2.5rem;
     padding: 2.5rem;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
-    border-radius: 1.2rem; color: white; margin-bottom: 2rem;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    background: #E8DCFF;
+    border-radius: 1.2rem; color: #1a1a2e; margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(83,52,131,0.10);
     height: auto; min-height: fit-content;
 }
 .profile-info { flex: 1; width: 100%; min-width: 0; }
-.profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: white; }
+.profile-info h1 { font-size: 1.9rem; font-weight: 700; margin: 0 0 0.3rem 0; color: #1a1a2e; }
 .profile-cols { display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap; width: 100%; }
-.profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.08); border-radius: 0.8rem; padding: 0.8rem 1rem; }
+.profile-col { min-width: 160px; flex: 1; background: rgba(255,255,255,0.5); border-radius: 0.8rem; padding: 0.8rem 1rem; }
 .profile-col h4 { font-size: 1.375rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin: 0 0 0.4rem 0; }
-.profile-col p  { font-size: 1.125rem; margin: 0.15rem 0; color: rgba(255,255,255,0.9); }
+.profile-col p  { font-size: 1.125rem; margin: 0.15rem 0; color: #1a1a2e; }
 .section-title {
     font-size: 1.5rem; font-weight: 700; color: #1a1a2e;
     margin: 1.8rem 0 1rem 0; padding-bottom: 0.4rem;
