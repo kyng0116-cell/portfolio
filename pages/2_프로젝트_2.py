@@ -21,23 +21,29 @@ st.markdown("""
 with st.sidebar:
     st.markdown("""
     <style>
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    section[data-testid="stSidebar"],
+    section[data-testid="stSidebar"] > div,
+    section[data-testid="stSidebar"] > div > div,
+    section[data-testid="stSidebar"] > div > div > div {
+        background-color: #ffffff !important;
+        background-image: none !important;
     }
-    [data-testid="stSidebar"] * { color: white !important; }
-    [data-testid="stSidebar"] hr { border-color: rgba(255,255,255,0.15); }
-    [data-testid="stSidebar"] .stButton button {
-        background: transparent;
-        border: 1px solid rgba(255,255,255,0.2);
-        color: white !important;
-        text-align: left;
-        border-radius: 0.5rem;
+    section[data-testid="stSidebar"] * { color: #1a1a2e !important; }
+    section[data-testid="stSidebar"] hr { border-color: rgba(26,26,46,0.1) !important; }
+    section[data-testid="stSidebar"] .stButton > button {
+        background: transparent !important;
+        border: 1px solid rgba(26,26,46,0.15) !important;
+        color: #1a1a2e !important;
+        text-align: left !important;
+        border-radius: 0.5rem !important;
+        font-size: 0.9rem !important;
+        transition: all 0.18s;
     }
-    [data-testid="stSidebar"] .stButton button:hover {
-        background:rgba(233,69,96,0.25);
-        border-color: #533483;
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        background: #f0f0f5 !important;
+        border-color: #533483 !important;
     }
-    [data-testid="stSidebarNav"] { display: none; }
+    [data-testid="stSidebarNav"] { display: none !important; }
     </style>
     """, unsafe_allow_html=True)
     st.markdown("## 💼 포트폴리오")
@@ -50,35 +56,59 @@ with st.sidebar:
     if st.button("🟩  스타벅스 마케팅 분석", use_container_width=True, key="sb_p2"):
         st.switch_page("pages/2_프로젝트_2.py")
     st.divider()
-    
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spacing: 1px; }
 * { word-break: keep-all !important; overflow-wrap: break-word !important; }
 strong { font-size: 1.25rem !important; }
-.page-header { background: linear-gradient(135deg, #1a1a2e, #0f3460); color: white; padding: 1.8rem 2rem; border-radius: 1rem; margin-bottom: 1.5rem; }
-.page-header h1 { margin: 0 0 0.3rem 0; font-size: 1.9rem; }
-.page-header p  { margin: 0; color: rgba(255,255,255,0.7); font-size: 1.125rem; }
-.section-box { background: #ffffff !important; border-radius: 1rem; padding: 1.8rem; box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 1.2rem; color: #1a1a2e !important; }
+
+/* 배경 — 홈과 동일한 회색 */
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
+[data-testid="stHeader"] { background: #f8f9fa !important; }
+.stApp { background: #f8f9fa !important; }
+
+/* 상단 프로젝트 헤더 카드 — 스타벅스 그린 포인트 */
+.page-header {
+    background: #ffffff;
+    border-radius: 1.2rem;
+    padding: 1.8rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 20px rgba(26,26,46,0.08);
+    border: 1px solid #e8e8ee;
+    border-left: 5px solid #00704a;
+}
+.page-header h1 { margin: 0.2rem 0 0.4rem 0; font-size: 1.75rem; color: #1a1a2e; font-weight: 700; }
+.page-header .subtitle { margin: 0; color: #666; font-size: 1rem; line-height: 1.6; }
+
+/* 콘텐츠 섹션 박스 */
+.section-box {
+    background: #ffffff !important;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e8e8ee;
+    margin-bottom: 1.2rem;
+    color: #1a1a2e !important;
+}
 .section-box * { color: #1a1a2e !important; }
 .section-box p { color: #1a1a2e; font-size: 1.125rem; word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
 .section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
 .section-box strong { font-size: 1.25rem; }
-[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
 </style>
 """, unsafe_allow_html=True)
 
-logo_html = img_to_html("assets/starbucks.png", width=60)
+logo_html = img_to_html("assets/starbucks.png", width=52)
 
 st.markdown(f"""
 <div class="page-header">
-    <div style="display:flex; align-items:center; gap:1rem;">
+    <div style="display:flex; align-items:center; gap:1.2rem;">
         {logo_html}
         <div>
             <h1>Starbucks Next Level</h1>
-            <p>행동경제학 X 마케팅을 통한 기획 분석</p>
+            <p class="subtitle">행동경제학 X 마케팅을 통한 기획 분석</p>
         </div>
     </div>
 </div>
@@ -102,11 +132,11 @@ st.markdown("""<div class="section-box">
         <br/>
         <p style="font-size:1.25rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
         <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">K-means</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">엘보우 방법</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">Kruskal-Wallis</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">카이제곱 검정</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">행동경제학</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">엘보우 방법</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">Kruskal-Wallis</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">행동경제학</span>
         </div>
     </div>
     <div style="flex:1.5;">
@@ -225,15 +255,15 @@ if tab == "💡 인사이트":
                 <strong>다중 노출 시너지 창출:</strong> SNS, Mobile, Web 등 여러 접점에 메시지를 중복 노출시키는 
                 리마인드 루프를 구축합니다.<br/>
                 <strong>기대 효과:</strong> '단순 노출 효과'와 '사회적 증거'를 결합하여 고객의 심리적 장벽을 
-                단계적으로 낮추고 최종 행동 전환을 가속화합니다.</></p></div>""", unsafe_allow_html=True)
+                단계적으로 낮추고 최종 행동 전환을 가속화합니다.</p></div>""", unsafe_allow_html=True)
 
 elif tab == "📋 대시보드 설명":
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">첫 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">첫 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드1.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">두 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">두 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/스타벅스_대시보드2.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
 
 st.divider()
