@@ -1,7 +1,6 @@
 import streamlit as st
-
-
 import base64
+
 def img_to_base64(img_path):
     with open(img_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
@@ -10,7 +9,7 @@ def img_to_html(img_path, width=40):
     with open(img_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
     return f'<img src="data:image/png;base64,{data}" width="{width}" height="{width}"/>'
-    
+
 st.set_page_config(page_title="다이소 뷰티 전략 분석", page_icon="🟥", layout="wide", initial_sidebar_state="collapsed")
 
 st.markdown("""
@@ -22,29 +21,35 @@ st.markdown("""
 with st.sidebar:
     st.markdown("""
     <style>
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    section[data-testid="stSidebar"],
+    section[data-testid="stSidebar"] > div,
+    section[data-testid="stSidebar"] > div > div,
+    section[data-testid="stSidebar"] > div > div > div {
+        background-color: #ffffff !important;
+        background-image: none !important;
     }
-    [data-testid="stSidebar"] * { color: white !important; }
-    [data-testid="stSidebar"] hr { border-color: rgba(255,255,255,0.15); }
-    [data-testid="stSidebar"] .stButton button {
-        background: transparent;
-        border: 1px solid rgba(255,255,255,0.2);
-        color: white !important;
-        text-align: left;
-        border-radius: 0.5rem;
+    section[data-testid="stSidebar"] * { color: #1a1a2e !important; }
+    section[data-testid="stSidebar"] hr { border-color: rgba(26,26,46,0.1) !important; }
+    section[data-testid="stSidebar"] .stButton > button {
+        background: transparent !important;
+        border: 1px solid rgba(26,26,46,0.15) !important;
+        color: #1a1a2e !important;
+        text-align: left !important;
+        border-radius: 0.5rem !important;
+        font-size: 0.9rem !important;
+        transition: all 0.18s;
     }
-    [data-testid="stSidebar"] .stButton button:hover {
-        background: rgba(233,69,96,0.25);
-        border-color: #e94560;
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        background: #f0f0f5 !important;
+        border-color: #533483 !important;
     }
-    [data-testid="stSidebarNav"] { display: none; }
+    [data-testid="stSidebarNav"] { display: none !important; }
     </style>
     """, unsafe_allow_html=True)
     st.markdown("## 💼 포트폴리오")
     st.caption("김재경 · Data Analyst")
     st.divider()
-    if st.button("🏠  홈",         use_container_width=True, key="sb_home"):
+    if st.button("🏠  홈", use_container_width=True, key="sb_home"):
         st.switch_page("Home.py")
     if st.button("🟥  다이소 뷰티 전략 분석", use_container_width=True, key="sb_p1"):
         st.switch_page("pages/1_프로젝트_1.py")
@@ -58,37 +63,59 @@ st.markdown("""
 html, body, [class*="css"] { font-family: 'Noto Sans KR', sans-serif; letter-spacing: 1px; }
 * { word-break: keep-all !important; overflow-wrap: break-word !important; }
 strong { font-size: 1.25rem !important; }
+
+/* 배경 — 홈과 동일한 회색 */
+[data-testid="stAppViewContainer"] { background: #f8f9fa !important; }
+[data-testid="stHeader"] { background: #f8f9fa !important; }
+.stApp { background: #f8f9fa !important; }
+
+/* 상단 프로젝트 헤더 카드 — 홈 프로필 카드와 동일한 흰색 스타일 */
 .page-header {
-    background: linear-gradient(135deg, #0f3460, #533483);
-    color: white; padding: 1.8rem 2rem;
-    border-radius: 1rem; margin-bottom: 1.5rem;
+    background: #ffffff;
+    border-radius: 1.2rem;
+    padding: 1.8rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 20px rgba(26,26,46,0.08);
+    border: 1px solid #e8e8ee;
+    border-left: 5px solid #e60012;
 }
-.page-header h1 { margin: 0 0 0.3rem 0; font-size: 1.9rem; }
-.page-header p  { margin: 0; color: rgba(255,255,255,0.7); font-size: 1.125rem; }
-.section-box { background: #ffffff !important; border-radius: 1rem; padding: 1.8rem; box-shadow: 0 2px 16px rgba(0,0,0,0.07); margin-bottom: 1.2rem; color: #1a1a2e !important; }
+.page-header h1 { margin: 0.2rem 0 0.4rem 0; font-size: 1.75rem; color: #1a1a2e; font-weight: 700; }
+.page-header .subtitle { margin: 0; color: #666; font-size: 1rem; line-height: 1.6; }
+.page-header .award { font-size: 0.85rem; color: #e60012; font-weight: 600; margin: 0 0 0.3rem 0; }
+
+/* 콘텐츠 섹션 박스 */
+.section-box {
+    background: #ffffff !important;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e8e8ee;
+    margin-bottom: 1.2rem;
+    color: #1a1a2e !important;
+}
 .section-box * { color: #1a1a2e !important; }
 .section-box p { color: #1a1a2e; font-size: 1.125rem; word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
 .section-box h3 { margin-top: 0; color: #1a1a2e; font-size: 1.5rem; border-left: 4px solid #533483; padding-left: 0.75rem; }
 .section-box h4 { color: #1a1a2e; font-size: 1.375rem; }
 .section-box strong { font-size: 1.25rem; }
-[data-testid="stAppViewContainer"] {background:#ffffff !important }
 </style>
 """, unsafe_allow_html=True)
 
-logo_html = img_to_html("assets/daiso.png", width=60)
+logo_html = img_to_html("assets/daiso.png", width=52)
 
 st.markdown(f"""
 <div class="page-header">
-    <div style="display:flex; align-items:center; gap:1rem;">
+    <div style="display:flex; align-items:center; gap:1.2rem;">
         {logo_html}
         <div>
-            <p>🏆최우수상</p>
+            <p class="award">🏆 최우수상</p>
             <h1>초저가를 넘어 초신뢰로</h1>
-            <p>가격이 아닌 '품질 신뢰'를 만들 때 초저가가 초격차로 전환됩니다.</p>
+            <p class="subtitle">가격이 아닌 '품질 신뢰'를 만들 때 초저가가 초격차로 전환됩니다.</p>
         </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 tab = st.radio(
     label="섹션 선택",
     options=["💡 인사이트", "📋 대시보드 설명"],
@@ -102,18 +129,18 @@ st.markdown("""<div class="section-box">
     <div style="flex:1; border-right:1px solid #f0f0f5; padding-right:1.5rem;">
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>기간</strong>&nbsp;&nbsp; 2026.02.09 ~ 2026.03.11</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>인원</strong>&nbsp;&nbsp; 5인</p>
-        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 정제, 데이터 전처리, 인과추론, 런칭 시뮬레이션 , 대시보드 제작</p>
+        <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>역할</strong>&nbsp;&nbsp; 데이터 정제, 데이터 전처리, 인과추론, 런칭 시뮬레이션, 대시보드 제작</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>언어</strong>&nbsp;&nbsp; SQL, Python</p>
         <p style="margin:0.3rem 0; font-size:1.125rem;"><strong>시각화</strong>&nbsp;&nbsp; Tableau</p>
         <br/>
         <p style="font-size:1.25rem; color:#533483; font-weight:600; margin-bottom:0.4rem;">분석 기법</p>
         <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">인과추론(PSM·IPTW·OW)</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">RNN/LSTM</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">층화 샘플링</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">OCR</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">GIS 분석</span>
-            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#555;">DB 정규화</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">인과추론(PSM·IPTW·OW)</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">OCR</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.94rem; color:#1a1a2e;">DB 정규화</span>
         </div>
     </div>
     <div style="flex:1.5;">
@@ -235,23 +262,23 @@ if tab == "💡 인사이트":
 
 elif tab == "📋 대시보드 설명":
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">표지</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">표지</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_표지.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">첫 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">첫 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드1.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">두 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">두 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드2.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">세 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">세 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드3.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
     st.markdown(f'''
-                <h4 style="margin-bottom:0; font-size:1.375rem;">네 번째 대시보드</h4>
+                <h4 style="margin-bottom:0; font-size:1.375rem; color:#1a1a2e;">네 번째 대시보드</h4>
                 <img src="data:image/png;base64,{img_to_base64("assets/다이소_대시보드4.png")}" style="width:100%; max-width:1200px;">''', unsafe_allow_html=True)
     st.divider()
 
