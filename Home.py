@@ -18,6 +18,12 @@ def img_to_html(img_path, width=40):
 
 st.set_page_config(page_title="포트폴리오", page_icon="💼", layout="wide", initial_sidebar_state="collapsed")
 
+st.markdown("""
+<p style="font-size:1.05rem; color:#555; margin: 0 0 0.8rem 0.2rem; letter-spacing:0.3px;">
+    심리학적 사고로 소비자 행동을 해석하고, 데이터로 비즈니스 문제를 풀어내는 데이터 분석가입니다.
+</p>
+""", unsafe_allow_html=True)
+
 with st.sidebar:
     st.markdown("""
     <style>
