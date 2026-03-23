@@ -145,7 +145,6 @@ st.markdown(f"""
             <div class="profile-col">
                 <h4>연락처</h4>
                 <p>📧 kyng0116@gmail.com</p>
-                <p>📱 010-5021-9745</p>
                 <p>🔗 <a href="https://github.com/kyng0116-cell" target="_blank">GitHub</a></p>
                 <p>🔗 <a href="https://www.linkedin.com/in/재경-김-6061463b7/" target="_blank">LinkedIn</a></p>
             </div>
