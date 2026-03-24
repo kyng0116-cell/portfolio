@@ -258,15 +258,16 @@ def load_html(path):
         return f.read()
 
 # 다이소
-components.html(load_html("slides/slide1_problem.html"), height=530, scrolling=False)
-components.html(load_html("slides/slide2_approach.html"), height=530, scrolling=False)
-components.html(load_html("slides/slide3_results.html"), height=530, scrolling=False)
+components.html(load_html("slides/slide1_problem.html"), height=740, scrolling=False)
+components.html(load_html("slides/slide2_approach.html"), height=740, scrolling=False)
+components.html(load_html("slides/slide3_results.html"), height=740, scrolling=False)
+
 
 if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
     st.switch_page("pages/1_프로젝트_1.py")
 
 # 스타벅스
-components.html(load_html("slides/slide4_starbucks.html"), height=530, scrolling=False)
+components.html(load_html("slides/slide4_starbucks.html"), height=740, scrolling=False)
 
 if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):  # ← 여기 앞 공백 제거
     st.switch_page("pages/2_프로젝트_2.py")
