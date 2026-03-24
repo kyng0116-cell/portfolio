@@ -180,6 +180,9 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+daiso_logo = img_to_html("assets/daiso.png", width=40)
+starbucks_logo = img_to_html("assets/starbucks.png", width=40)
+
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
 st.markdown(daiso_card, unsafe_allow_html=True)
@@ -192,8 +195,7 @@ st.markdown(sbux_card, unsafe_allow_html=True)
 if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
     st.switch_page("pages/2_프로젝트_2.py")
 
-daiso_logo = img_to_html("assets/daiso.png", width=40)
-starbucks_logo = img_to_html("assets/starbucks.png", width=40)
+
 
 daiso_card = f"""
 <div style="background:#fff; border-radius:1rem; padding:1.5rem;max-width:860px;
