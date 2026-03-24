@@ -180,23 +180,11 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+# 1. 로고 먼저
 daiso_logo = img_to_html("assets/daiso.png", width=40)
 starbucks_logo = img_to_html("assets/starbucks.png", width=40)
 
-st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
-
-st.markdown(daiso_card, unsafe_allow_html=True)
-if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
-    st.switch_page("pages/1_프로젝트_1.py")
-
-st.markdown("<div style='margin-top:1rem;'></div>", unsafe_allow_html=True)
-
-st.markdown(sbux_card, unsafe_allow_html=True)
-if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
-    st.switch_page("pages/2_프로젝트_2.py")
-
-
-
+# 2. 카드 HTML 정의
 daiso_card = f"""
 <div style="background:#fff; border-radius:1rem; padding:1.5rem;max-width:860px;
             box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
@@ -306,6 +294,9 @@ sbux_card = f"""
   </div>
 </div>
 """
+
+# 3. 렌더링
+st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
 st.markdown(daiso_card, unsafe_allow_html=True)
 if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
