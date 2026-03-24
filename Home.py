@@ -251,34 +251,25 @@ with col2:
 
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
-
-daiso_logo = img_to_html("assets/daiso.png", width=40)
-starbucks_logo = img_to_html("assets/starbucks.png", width=40)
-
 import streamlit.components.v1 as components
 
 def load_html(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
-# 슬라이드 1
+# 다이소
 components.html(load_html("slides/slide1_problem.html"), height=530, scrolling=False)
-
-# 슬라이드 2
 components.html(load_html("slides/slide2_approach.html"), height=530, scrolling=False)
-
-# 슬라이드 3
 components.html(load_html("slides/slide3_results.html"), height=530, scrolling=False)
 
 if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
-        st.switch_page("pages/1_프로젝트_1.py")
+    st.switch_page("pages/1_프로젝트_1.py")
 
-
+# 스타벅스
 components.html(load_html("slides/slide4_starbucks.html"), height=530, scrolling=False)
 
-
- if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
-        st.switch_page("pages/2_프로젝트_2.py")
+if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):  # ← 여기 앞 공백 제거
+    st.switch_page("pages/2_프로젝트_2.py")
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
