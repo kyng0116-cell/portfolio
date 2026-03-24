@@ -144,7 +144,7 @@ st.markdown(f"""
                     border:1.5px solid #533483; border-radius:99px;
                     padding:0.25rem 0.8rem; text-decoration:none;
                     white-space:nowrap; letter-spacing:0.3px;">
-                📄 PDF 다운로드
+                📄 포트폴리오 PDF 다운로드
             </a>
         </h1>
         <p style="color:#1a1a2e; font-size:1.05rem; margin: 0.4rem 0 0.8rem 0; line-height:2;">
