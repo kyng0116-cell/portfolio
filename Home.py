@@ -182,156 +182,85 @@ st.markdown(f"""
 
 daiso_logo = img_to_html("assets/daiso.png", width=36)
 starbucks_logo = img_to_html("assets/starbucks.png", width=36)
+st.markdown('<div class="section-title">Main Project : 다이소 뷰티 전략 분석</div>', unsafe_allow_html=True)
 
-daiso_card = f"""
-<div style="background:#fff; border-radius:1.2rem; padding:2rem;
-            box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
-            border-top:4px solid #e60012;">
-  <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.4rem;">
-    {daiso_logo}
-    <div>
-      <div style="font-size:0.75rem; font-weight:600; color:#e60012; letter-spacing:2px; text-transform:uppercase;">PROJECT CASE</div>
-      <div style="font-size:1.3rem; font-weight:700; color:#1a1a2e; margin-top:0.1rem;">초저가를 넘어 초신뢰로</div>
+daiso_card_html = f"""
+<div class="project-card" style="border-top:5px solid #e60012;">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:15px;">
+        {daiso_logo} <strong style="font-size:1.4rem;">초저가를 넘어 '초신뢰' 브랜드로의 전환 전략</strong>
+        <span style="margin-left:auto; background:#fff0f0; color:#e60012; padding:4px 12px; border-radius:15px; font-size:0.85rem; font-weight:700;">최우수상 수상</span>
     </div>
-    <span style="margin-left:auto; background:#fff8e6; border:1px solid #e6a817; border-radius:99px;
-                 padding:0.25rem 0.8rem; font-size:0.82rem; color:#e6a817; font-weight:600; white-space:nowrap;">🏆 최우수상</span>
-  </div>
-  <p style="font-size:0.88rem; color:#999; margin:0 0 1.5rem 2.8rem;">2026.02 ~ 03 &nbsp;·&nbsp; 5인 &nbsp;·&nbsp; SQL · Python · Tableau</p>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin-bottom:1.2rem;">
-    <div style="background:#fff5f5; border-left:3px solid #e60012; border-radius:0 0.6rem 0.6rem 0; padding:0.9rem 1rem;">
-      <div style="font-size:0.72rem; font-weight:700; color:#e60012; letter-spacing:2px; margin-bottom:0.5rem;">PROBLEM</div>
-      <div style="font-size:0.92rem; color:#333; line-height:1.7;">
-        144% 급성장 이면의 <span style="color:#1a1a2e; font-weight:600;">납 검출 이슈 + 100% 사입 구조</span><br>
-        → 단 1건의 사고로 전체 성장이 멈출 수 있는 구조적 결함
-      </div>
+    <div style="display:grid; grid-template-columns: 1.2fr 1.8fr; gap:20px;">
+        <div style="background:#fff5f5; padding:1.2rem; border-radius:12px;">
+            <h4 style="color:#e60012; margin-top:0;">🚩 Problem Definition</h4>
+            <ul style="font-size:0.92rem; color:#444; padding-left:20px;">
+                <li><b>성장의 역설:</b> 144% 급성장(4천억 매출) 이면의 납 검출 등 품질 이슈 발생</li>
+                <li><b>구조적 위협:</b> 100% 사입 구조로 인해 단 한 번의 품질 사고가 브랜드 전체의 생존을 위협</li>
+                <li><b>분석 질문:</b> "초저가 이미지를 유지하면서 어떻게 '초신뢰' 브랜드를 구축할 것인가?"</li>
+            </ul>
+        </div>
+        <div style="background:#f9f9f9; padding:1.2rem; border-radius:12px; border:1px solid #eee;">
+            <h4 style="color:#1a1a2e; margin-top:0;">🛠 Solution & <span style="color:#533483;">My Contribution</span></h4>
+            <div style="font-size:0.9rem; line-height:1.6;">
+                <p><span class="contribution-badge">내 기여</span> <b>OCR 파이프라인 구축:</b> Clova/EasyOCR 교차 검증으로 30만 건의 비정형 데이터 정형화</p>
+                <p><span class="contribution-badge">내 기여</span> <b>인과추론 분석:</b> PSM·IPTW·OW 기법을 통해 성분-브랜드 간 '상호작용 효과' 규명</p>
+                <p><b>GIS 알고리즘:</b> 유동인구·외국인 비중 z-score 표준화 기반 Hub 매장 재고 전략 도출</p>
+            </div>
+        </div>
     </div>
-    <div style="background:#f8f5ff; border-left:3px solid #7c5cbf; border-radius:0 0.6rem 0.6rem 0; padding:0.9rem 1rem;">
-      <div style="font-size:0.72rem; font-weight:700; color:#7c5cbf; letter-spacing:2px; margin-bottom:0.5rem;">APPROACH</div>
-      <div style="font-size:0.88rem; color:#333; line-height:1.8;">
-        ① OCR 파이프라인으로 900여 제품 전성분 정형화<br>
-        ② PSM·IPTW·OW 인과추론으로 매출 동인 확정<br>
-        ③ GIS 수요 밀도 점수 → Hub 매장 재고 전략
-      </div>
-    </div>
-  </div>
 
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.8rem; margin-bottom:1.2rem;">
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #e60012;">
-      <div style="font-size:1.8rem; font-weight:800; color:#e60012; line-height:1;">16.7%</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">연착륙 제품 비율</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">→ 매출 32.5% 견인</div>
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:15px; margin-top:20px;">
+        <div style="text-align:center; padding:15px; background:#f8f9fa; border-radius:10px;">
+            <div style="font-size:1.8rem; font-weight:800; color:#e60012;">32.5%</div>
+            <div style="font-size:0.85rem; color:#666;">연착륙 제품 매출 견인율</div>
+        </div>
+        <div style="text-align:center; padding:15px; background:#f8f9fa; border-radius:10px;">
+            <div style="font-size:1.8rem; font-weight:800; color:#533483;">Interaction</div>
+            <div style="font-size:0.85rem; color:#666;">기능성 성분 x 브랜드 신뢰 효과</div>
+        </div>
+        <div style="text-align:center; padding:15px; background:#f8f9fa; border-radius:10px;">
+            <div style="font-size:1.8rem; font-weight:800; color:#0056b3;">Hub 전략</div>
+            <div style="font-size:0.85rem; color:#666;">상권별 입점 시뮬레이터 개발</div>
+        </div>
     </div>
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #5b9cf6;">
-      <div style="font-size:1.8rem; font-weight:800; color:#5b9cf6; line-height:1;">83.3%</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">연착륙 중 스킨케어</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">→ 5,000원 기초 제품</div>
+    <div style="margin-top:15px; padding:12px; background:#1a1a2e; color:#e8e8ee; border-radius:8px; font-size:0.95rem;">
+        💡 <b>Insight:</b> 분석은 현상 설명이 아닌 의사결정 도구여야 합니다. 성분 단독 효과보다 <b>'카테고리 신뢰'</b>가 결합될 때 구매 전환이 폭발함을 데이터로 증명했습니다.
     </div>
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #9b7fe8;">
-      <div style="font-size:1.8rem; font-weight:800; color:#9b7fe8; line-height:1;">30만건</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">리뷰 데이터 정제</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">→ 입점 시뮬레이터</div>
-    </div>
-  </div>
-
-  <div style="background:#1a1a2e; border-radius:0.7rem; padding:0.9rem 1rem; margin-bottom:1.2rem;
-              display:flex; align-items:flex-start; gap:0.7rem;">
-    <span style="font-size:1.1rem; margin-top:0.1rem;">💡</span>
-    <div>
-      <span style="font-size:0.72rem; font-weight:700; color:#e6a817; letter-spacing:2px;">KEY INSIGHT &nbsp;</span>
-      <span style="font-size:0.92rem; color:#e8e8ee;">기능성 성분은 단독 효과 없음 — <span style="color:#fff; font-weight:600;">카테고리 신뢰</span>와 결합 시 증폭되는 조절 변수</span>
-    </div>
-  </div>
-
-  <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">인과추론(PSM·IPTW·OW)</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">생존분석</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">OCR</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">GIS</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">RNN/LSTM</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">Tableau</span>
-  </div>
 </div>
 """
-
-sbux_card = f"""
-<div style="background:#fff; border-radius:1.2rem; padding:2rem;
-            box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
-            border-top:4px solid #00704a;">
-  <div style="display:flex; align-items:center; gap:0.8rem; margin-bottom:0.4rem;">
-    {starbucks_logo}
-    <div>
-      <div style="font-size:0.75rem; font-weight:600; color:#00704a; letter-spacing:2px; text-transform:uppercase;">PROJECT CASE</div>
-      <div style="font-size:1.3rem; font-weight:700; color:#1a1a2e; margin-top:0.1rem;">Starbucks Next Level</div>
-    </div>
-  </div>
-  <p style="font-size:0.88rem; color:#999; margin:0 0 1.5rem 2.8rem;">2026.01 &nbsp;·&nbsp; 5인 &nbsp;·&nbsp; SQL · Python · Tableau</p>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin-bottom:1.2rem;">
-    <div style="background:#f0faf5; border-left:3px solid #00704a; border-radius:0 0.6rem 0.6rem 0; padding:0.9rem 1rem;">
-      <div style="font-size:0.72rem; font-weight:700; color:#00704a; letter-spacing:2px; margin-bottom:0.5rem;">PROBLEM</div>
-      <div style="font-size:0.92rem; color:#333; line-height:1.7;">
-        채널별 순수 기여도 불명확 → <span style="color:#1a1a2e; font-weight:600;">비효율적 예산 배분</span>과<br>
-        무분별한 메시지 발송으로 인한 고객 피로도 가중
-      </div>
-    </div>
-    <div style="background:#f8f5ff; border-left:3px solid #7c5cbf; border-radius:0 0.6rem 0.6rem 0; padding:0.9rem 1rem;">
-      <div style="font-size:0.72rem; font-weight:700; color:#7c5cbf; letter-spacing:2px; margin-bottom:0.5rem;">APPROACH</div>
-      <div style="font-size:0.88rem; color:#333; line-height:1.8;">
-        ① K-means로 고객 반응 패턴 4개 세그먼트 분류<br>
-        ② 카이제곱 검정으로 채널 독립 효과 통계 검증<br>
-        ③ 행동경제학 3가지 프레임으로 전환 트리거 분석
-      </div>
-    </div>
-  </div>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.8rem; margin-bottom:1.2rem;">
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #00704a;">
-      <div style="font-size:1.8rem; font-weight:800; color:#00704a; line-height:1;">43.97%p</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">SNS 채널 효과</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">Web 대비 압도적</div>
-    </div>
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #5b9cf6;">
-      <div style="font-size:1.8rem; font-weight:800; color:#5b9cf6; line-height:1;">2.4배</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">3채널 중복 효과</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">완료율 50% 달성</div>
-    </div>
-    <div style="background:#f8f9fa; border-radius:0.8rem; padding:1rem 0.8rem; text-align:center; border-top:2px solid #9b7fe8;">
-      <div style="font-size:1.8rem; font-weight:800; color:#9b7fe8; line-height:1;">4개</div>
-      <div style="font-size:0.8rem; color:#999; margin-top:0.4rem;">고객 세그먼트</div>
-      <div style="font-size:0.8rem; color:#555; margin-top:0.2rem;">행동 기반 분류</div>
-    </div>
-  </div>
-
-  <div style="background:#1a1a2e; border-radius:0.7rem; padding:0.9rem 1rem; margin-bottom:1.2rem;
-              display:flex; align-items:flex-start; gap:0.7rem;">
-    <span style="font-size:1.1rem; margin-top:0.1rem;">💡</span>
-    <div>
-      <span style="font-size:0.72rem; font-weight:700; color:#e6a817; letter-spacing:2px;">KEY INSIGHT &nbsp;</span>
-      <span style="font-size:0.92rem; color:#e8e8ee;">고액 할인보다 실질 지불액 최소화가 전환율 3배 — <span style="color:#fff; font-weight:600;">손실 회피 심리</span> 작동</span>
-    </div>
-  </div>
-
-  <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">K-means</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">카이제곱 검정</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">Kruskal-Wallis</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">행동경제학</span>
-    <span style="background:#f0f0f5; border-radius:99px; padding:0.25rem 0.8rem; font-size:0.83rem; color:#1a1a2e;">Tableau</span>
-  </div>
-</div>
-"""
- 
-st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
-
-st.markdown(daiso_card, unsafe_allow_html=True)
-if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
+st.markdown(daiso_card_html, unsafe_allow_html=True)
+if st.button("🟥 다이소 프로젝트 상세 분석 보기", use_container_width=True):
     st.switch_page("pages/1_프로젝트_1.py")
 
-st.markdown("<div style='margin-top:1.2rem;'></div>", unsafe_allow_html=True)
 
-st.markdown(sbux_card, unsafe_allow_html=True)
-if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
+# 3. 서브 프로젝트 (스타벅스)
+st.markdown('<div class="section-title">Sub Project : Starbucks Next Level</div>', unsafe_allow_html=True)
+
+sbux_card_html = f"""
+<div class="project-card" style="border-top:5px solid #00704a;">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:15px;">
+        {starbucks_logo} <strong style="font-size:1.4rem;">채널별 전환 트리거 정량화 및 행동경제학적 해석</strong>
+    </div>
+    
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+        <div style="font-size:0.92rem; line-height:1.7;">
+            <p><b>핵심 질문:</b> "어떤 트리거가 고객의 결제 버튼을 누르게 만드는가?"</p>
+            <p><span class="contribution-badge">내 기여</span> <b>통계 검증:</b> 카이제곱 검정으로 SNS 채널의 압도적 효율(Web 대비 +43.9%p) 규명</p>
+            <p><span class="contribution-badge">내 기여</span> <b>심리 모델링:</b> 손실 회피 및 사회적 증거 이론을 데이터 패턴과 연결해 해석</p>
+        </div>
+        <div style="background:#f0faf5; padding:1rem; border-radius:10px; font-size:0.9rem;">
+            <ul style="margin:0; padding-left:15px;">
+                <li><b>SNS 전환율:</b> 43.97%p (Web 7.16%p 대비 압도적 우위)</li>
+                <li><b>멀티채널 시너지:</b> 3개 채널 노출 시 완료율 50% (2.4배 상승)</li>
+                <li><b>리워드 설계:</b> 고액 할인보다 '낮은 실질 지불액'이 전환에 3배 효과</li>
+            </ul>
+        </div>
+    </div>
+</div>
+"""
+st.markdown(sbux_card_html, unsafe_allow_html=True)
+if st.button("🟩 스타벅스 프로젝트 상세 분석 보기", use_container_width=True):
     st.switch_page("pages/2_프로젝트_2.py")
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
