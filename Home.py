@@ -251,26 +251,68 @@ with col2:
 
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
+
+daiso_logo = img_to_html("assets/daiso.png", width=40)
+starbucks_logo = img_to_html("assets/starbucks.png", width=40)
+
 import streamlit.components.v1 as components
 
 def load_html(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
-# 다이소
-components.html(load_html("slides/slide1_problem.html"), height=740, scrolling=False)
-components.html(load_html("slides/slide2_approach.html"), height=740, scrolling=False)
-components.html(load_html("slides/slide3_results.html"), height=740, scrolling=False)
+# 슬라이드 1
+components.html(load_html("slides/slide1_problem.html"), height=530, scrolling=False)
 
+# 슬라이드 2
+components.html(load_html("slides/slide2_approach.html"), height=530, scrolling=False)
+
+# 슬라이드 3
+components.html(load_html("slides/slide3_results.html"), height=530, scrolling=False)
 
 if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
-    st.switch_page("pages/1_프로젝트_1.py")
+        st.switch_page("pages/1_프로젝트_1.py")
 
-# 스타벅스
-components.html(load_html("slides/slide4_starbucks.html"), height=740, scrolling=False)
 
-if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):  # ← 여기 앞 공백 제거
-    st.switch_page("pages/2_프로젝트_2.py")
+components.html(load_html("slides/slide4_starbucks.html"), height=530, scrolling=False)
+
+
+with col2:
+    st.markdown(f"""
+    <div style="background:#fff; border-radius:1rem; padding:1.5rem;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
+                border-top: 4px solid #00704a; min-height:320px;">
+        <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
+            {starbucks_logo}
+            <strong style="font-size:1.1rem; color:#1a1a2e;">Starbucks Next Level</strong>
+        </div>
+        <p style="font-size:0.95rem; color:#1a1a2e; margin-bottom:1rem; line-height:1.65;">행동경제학 기반 프로모션 채널 효과 분석 및 고객 세그먼트 전략 수립</p>
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">K-means</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">엘보우 방법</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">Kruskal-Wallis</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">카이제곱 검정</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">행동경제학</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">Tableau</span>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-bottom:1rem; padding-top:0.8rem; border-top:1px solid #f0f0f5;">
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#00704a;">43.97%p</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">SNS 채널 효과</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#00704a;">4개</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">고객 세그먼트</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#00704a;">3가지</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">행동경제학 인사이트</div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("🟩 프로젝트 보기", use_container_width=True, key="proj2_btn"):
+        st.switch_page("pages/2_프로젝트_2.py")
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
