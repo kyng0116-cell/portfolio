@@ -251,6 +251,7 @@ with col2:
 
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
+col1, col2 = st.columns(2)
 
 daiso_logo = img_to_html("assets/daiso.png", width=40)
 starbucks_logo = img_to_html("assets/starbucks.png", width=40)
