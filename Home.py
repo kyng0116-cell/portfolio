@@ -256,27 +256,44 @@ col1, col2 = st.columns(2)
 daiso_logo = img_to_html("assets/daiso.png", width=40)
 starbucks_logo = img_to_html("assets/starbucks.png", width=40)
 
-import streamlit.components.v1 as components
-
-def load_html(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
-
-# 슬라이드 1
-components.html(load_html("slides/slide1_problem.html"), height=530, scrolling=False)
-
-# 슬라이드 2
-components.html(load_html("slides/slide2_approach.html"), height=530, scrolling=False)
-
-# 슬라이드 3
-components.html(load_html("slides/slide3_results.html"), height=530, scrolling=False)
-
-if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
+with col1:
+    st.markdown(f"""
+    <div style="background:#fff; border-radius:1rem; padding:1.5rem;
+                box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
+                border-top: 4px solid #e60012; min-height:320px;">
+        <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.8rem;">
+            {daiso_logo}
+            <strong style="font-size:1.1rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
+            <p style="margin-left:auto; margin-bottom:0; font-size:0.88rem; color:#e60012; font-weight:600;">🏆 최우수상</p>
+        </div>
+        <p style="font-size:0.95rem; color:#1a1a2e; margin-bottom:1rem; line-height:1.65;">다이소 뷰티 30만 건 리뷰 분석을 통한 2026년 성장 전략 도출</p>
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-bottom:1rem;">
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">RNN/LSTM</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">인과추론(PSM·IPTW·OW)</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">층화 샘플링</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">OCR</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">GIS 분석</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">DB 정규화</span>
+            <span style="background:#f0f0f5; border-radius:99px; padding:0.2rem 0.7rem; font-size:0.88rem; color:#1a1a2e;">Tableau</span>
+        </div>
+        <div style="display:flex; gap:1.5rem; margin-bottom:1rem; padding-top:0.8rem; border-top:1px solid #f0f0f5;">
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#e60012;">30만건</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">리뷰 데이터</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#e60012;">83.3%</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">연착륙 제품 중 스킨케어</div>
+            </div>
+            <div style="text-align:center;">
+                <div style="font-size:1.25rem; font-weight:700; color:#e60012;">144%</div>
+                <div style="font-size:0.82rem; color:#888; margin-top:0.2rem;">뷰티 카테고리 성장률</div>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    if st.button("🟥 프로젝트 보기", use_container_width=True, key="proj1_btn"):
         st.switch_page("pages/1_프로젝트_1.py")
-
-
-components.html(load_html("slides/slide4_starbucks.html"), height=530, scrolling=False)
-
 
 with col2:
     st.markdown(f"""
