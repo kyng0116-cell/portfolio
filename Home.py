@@ -192,10 +192,11 @@ st.markdown(sbux_card, unsafe_allow_html=True)
 if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
     st.switch_page("pages/2_프로젝트_2.py")
 
-
+daiso_logo = img_to_html("assets/daiso.png", width=40)
+starbucks_logo = img_to_html("assets/starbucks.png", width=40)
 
 daiso_card = f"""
-<div style="background:#fff; border-radius:1rem; padding:1.5rem;max-width:860px;
+<div style="background:#fff; border-radius:1rem; padding:1.5rem;
             box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
             border-top:4px solid #e60012;">
   <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.4rem;">
@@ -304,15 +305,15 @@ sbux_card = f"""
 </div>
 """
 
-st.markdown(daiso_card, unsafe_allow_html=True)
-if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
-    st.switch_page("pages/1_프로젝트_1.py")
+with col1:
+    st.markdown(daiso_card, unsafe_allow_html=True)
+    if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
+        st.switch_page("pages/1_프로젝트_1.py")
 
-st.markdown("<div style='margin-top:1rem;'></div>", unsafe_allow_html=True)
-
-st.markdown(sbux_card, unsafe_allow_html=True)
-if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
-    st.switch_page("pages/2_프로젝트_2.py")
+with col2:
+    st.markdown(sbux_card, unsafe_allow_html=True)
+    if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
+        st.switch_page("pages/2_프로젝트_2.py")
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
