@@ -321,7 +321,7 @@ sbux_card = f"""
   </div>
 </div>
 """
-
+ 
 st.markdown('<div class="section-title">📁 Projects</div>', unsafe_allow_html=True)
 
 st.markdown(daiso_card, unsafe_allow_html=True)
