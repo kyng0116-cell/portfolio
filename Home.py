@@ -126,17 +126,8 @@ cert1_b64 = img_to_base64("images/사조사 자격증_1.png")
 cert2_b64 = img_to_base64("images/직상 자격증_1.png")
 cert3_b64 = img_to_base64("images/청상 자격증.jpeg")
 cert4_b64 = img_to_base64("images/최우수상.png")
+pdf_b64 = img_to_base64("assets/김재경_포트폴리오.pdf")  # ← 추가
 
-st.divider()
-
-with open("assets/김재경_포트폴리오.pdf", "rb") as f:
-    st.download_button(
-        label="📄 포트폴리오 PDF 다운로드",
-        data=f,
-        file_name="김재경_포트폴리오.pdf",
-        mime="application/pdf",
-        use_container_width=True,
-    )
 
 st.markdown(f"""
 <div class="profile-card">
@@ -145,7 +136,17 @@ st.markdown(f"""
                 border:3px solid #e8e8ee; flex-shrink:0;
                 box-shadow:0 2px 12px rgba(0,0,0,0.10);">
     <div class="profile-info">
-        <h1>김재경</h1>
+        <h1 style="display:flex; align-items:center; gap:1rem;">
+            김재경
+            <a href="data:application/pdf;base64,{pdf_b64}"
+                download="김재경_포트폴리오.pdf"
+                style="font-size:0.82rem; font-weight:600; color:#533483;
+                    border:1.5px solid #533483; border-radius:99px;
+                    padding:0.25rem 0.8rem; text-decoration:none;
+                    white-space:nowrap; letter-spacing:0.3px;">
+                📄 PDF 다운로드
+            </a>
+        </h1>
         <p style="color:#1a1a2e; font-size:1.05rem; margin: 0.4rem 0 0.8rem 0; line-height:2;">
             <strong>● 통계 분석:</strong> 숫자 뒤에 숨은 맥락을 읽고, 인과추론·회귀분석 등 다양한 통계 기법으로 데이터를 해석합니다.<br/>
             <strong>● End-to-End 분석:</strong> 데이터 수집부터 EDA, ML 모델링, 시각화에 이르는 전체 분석 과정을 빠짐없이 수행합니다.<br/>
