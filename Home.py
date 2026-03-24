@@ -64,6 +64,18 @@ with st.sidebar:
         st.switch_page("pages/2_프로젝트_2.py")
     st.divider()
 
+
+st.divider()
+
+with open("assets/김재경_포트폴리오.pdf", "rb") as f:
+    st.download_button(
+        label="📄 포트폴리오 PDF 다운로드",
+        data=f,
+        file_name="김재경_포트폴리오.pdf",
+        mime="application/pdf",
+        use_container_width=True,
+    )
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap');
@@ -370,13 +382,3 @@ with col3:
     render_skills(libraries)
 
 
-st.divider()
-
-with open("assets/김재경_포트폴리오.pdf", "rb") as f:
-    st.download_button(
-        label="📄 포트폴리오 PDF 다운로드",
-        data=f,
-        file_name="김재경_포트폴리오.pdf",
-        mime="application/pdf",
-        use_container_width=True,
-    )
