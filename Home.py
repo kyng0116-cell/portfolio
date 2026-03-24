@@ -192,7 +192,7 @@ with col1:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem;
                 box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
                 border-top: 4px solid #e60012;">
-        <!-- 헤더 -->
+
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.4rem;">
             {daiso_logo}
             <strong style="font-size:1.1rem; color:#1a1a2e;">초저가를 넘어 초신뢰로</strong>
@@ -200,7 +200,7 @@ with col1:
         </div>
         <p style="font-size:0.88rem; color:#888; margin:0 0 1rem 0;">2026.02 ~ 03 | 5인 | SQL · Python · Tableau</p>
 
-        <!-- 문제 -->
+    
         <div style="background:#fff5f5; border-left:3px solid #e60012; border-radius:0 0.5rem 0.5rem 0;
                     padding:0.6rem 0.9rem; margin-bottom:0.8rem;">
             <div style="font-size:0.72rem; font-weight:700; color:#e60012; letter-spacing:1px; margin-bottom:0.2rem;">PROBLEM</div>
@@ -210,7 +210,7 @@ with col1:
             </div>
         </div>
 
-        <!-- 접근 -->
+        
         <div style="background:#f8f5ff; border-left:3px solid #533483; border-radius:0 0.5rem 0.5rem 0;
                     padding:0.6rem 0.9rem; margin-bottom:0.8rem;">
             <div style="font-size:0.72rem; font-weight:700; color:#533483; letter-spacing:1px; margin-bottom:0.3rem;">APPROACH</div>
@@ -221,7 +221,7 @@ with col1:
             </div>
         </div>
 
-        <!-- 결과 수치 -->
+        
         <div style="display:flex; gap:0.8rem; margin-bottom:0.8rem; padding-top:0.8rem; border-top:1px solid #f0f0f5;">
             <div style="flex:1; text-align:center; background:#f8f9fa; border-radius:0.6rem; padding:0.6rem 0.3rem;">
                 <div style="font-size:1.3rem; font-weight:700; color:#e60012;">16.7%</div>
@@ -240,7 +240,7 @@ with col1:
             </div>
         </div>
 
-        <!-- 핵심 인사이트 -->
+        
         <div style="background:#1a1a2e; border-radius:0.5rem; padding:0.6rem 0.9rem;">
             <span style="font-size:0.72rem; font-weight:700; color:#e60012; letter-spacing:1px;">KEY INSIGHT  </span>
             <span style="font-size:0.85rem; color:#e8e8ee; line-height:1.6;">
@@ -248,7 +248,7 @@ with col1:
             </span>
         </div>
 
-        <!-- 기술 태그 -->
+        
         <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.8rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.82rem; color:#1a1a2e;">인과추론(PSM·IPTW·OW)</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.82rem; color:#1a1a2e;">생존분석</span>
@@ -267,14 +267,14 @@ with col2:
     <div style="background:#fff; border-radius:1rem; padding:1.5rem;
                 box-shadow:0 2px 12px rgba(0,0,0,0.06); border:1px solid #e8e8ee;
                 border-top: 4px solid #00704a;">
-        <!-- 헤더 -->
+        
         <div style="display:flex; align-items:center; gap:0.7rem; margin-bottom:0.4rem;">
             {starbucks_logo}
             <strong style="font-size:1.1rem; color:#1a1a2e;">Starbucks Next Level</strong>
         </div>
         <p style="font-size:0.88rem; color:#888; margin:0 0 1rem 0;">2026.01 | 5인 | SQL · Python · Tableau</p>
 
-        <!-- 문제 -->
+        
         <div style="background:#f0faf5; border-left:3px solid #00704a; border-radius:0 0.5rem 0.5rem 0;
                     padding:0.6rem 0.9rem; margin-bottom:0.8rem;">
             <div style="font-size:0.72rem; font-weight:700; color:#00704a; letter-spacing:1px; margin-bottom:0.2rem;">PROBLEM</div>
@@ -284,7 +284,7 @@ with col2:
             </div>
         </div>
 
-        <!-- 접근 -->
+        
         <div style="background:#f8f5ff; border-left:3px solid #533483; border-radius:0 0.5rem 0.5rem 0;
                     padding:0.6rem 0.9rem; margin-bottom:0.8rem;">
             <div style="font-size:0.72rem; font-weight:700; color:#533483; letter-spacing:1px; margin-bottom:0.3rem;">APPROACH</div>
@@ -295,7 +295,7 @@ with col2:
             </div>
         </div>
 
-        <!-- 결과 수치 -->
+        
         <div style="display:flex; gap:0.8rem; margin-bottom:0.8rem; padding-top:0.8rem; border-top:1px solid #f0f0f5;">
             <div style="flex:1; text-align:center; background:#f8f9fa; border-radius:0.6rem; padding:0.6rem 0.3rem;">
                 <div style="font-size:1.3rem; font-weight:700; color:#00704a;">43.97%p</div>
@@ -313,8 +313,7 @@ with col2:
                 <div style="font-size:0.75rem; color:#555;">행동 기반 분류</div>
             </div>
         </div>
-
-        <!-- 핵심 인사이트 -->
+        
         <div style="background:#1a1a2e; border-radius:0.5rem; padding:0.6rem 0.9rem;">
             <span style="font-size:0.72rem; font-weight:700; color:#00704a; letter-spacing:1px;">KEY INSIGHT  </span>
             <span style="font-size:0.85rem; color:#e8e8ee; line-height:1.6;">
@@ -322,7 +321,7 @@ with col2:
             </span>
         </div>
 
-        <!-- 기술 태그 -->
+        
         <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.8rem;">
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.82rem; color:#1a1a2e;">K-means</span>
             <span style="background:#f0f0f5; border-radius:99px; padding:0.15rem 0.6rem; font-size:0.82rem; color:#1a1a2e;">카이제곱 검정</span>
