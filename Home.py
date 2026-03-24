@@ -305,15 +305,15 @@ sbux_card = f"""
 </div>
 """
 
-with col1:
-    st.markdown(daiso_card, unsafe_allow_html=True)
-    if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
-        st.switch_page("pages/1_프로젝트_1.py")
+st.markdown(daiso_card, unsafe_allow_html=True)
+if st.button("🟥 프로젝트 상세 보기", use_container_width=True, key="proj1_btn"):
+    st.switch_page("pages/1_프로젝트_1.py")
 
-with col2:
-    st.markdown(sbux_card, unsafe_allow_html=True)
-    if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
-        st.switch_page("pages/2_프로젝트_2.py")
+st.markdown("<div style='margin-top:1rem;'></div>", unsafe_allow_html=True)
+
+st.markdown(sbux_card, unsafe_allow_html=True)
+if st.button("🟩 프로젝트 상세 보기", use_container_width=True, key="proj2_btn"):
+    st.switch_page("pages/2_프로젝트_2.py")
 
 st.markdown('<div class="section-title">🛠 Skills</div>', unsafe_allow_html=True)
 
